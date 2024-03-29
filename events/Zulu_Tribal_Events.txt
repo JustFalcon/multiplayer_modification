@@ -1,0 +1,101 @@
+
+namespace = zul_mod
+
+country_event = {
+	id = zul_mod.1
+	title = "zul_mod.1.t"
+	desc = zul_mod.1.d
+	picture = MONGOL_BANNERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ZIM
+	}
+
+	option = {
+		name = "zul_mod.1.a"
+
+		every_province = {
+			limit = {
+				OR = {
+					province_id = 4784 
+					province_id = 1800 
+					province_id = 1183 
+					province_id = 1182 
+					province_id = 4783 
+					province_id = 4781
+					province_id = 789  
+				}
+			}
+			add_core = ZUL
+			cede_province = ZUL
+		}
+		hidden_effect = {
+			ZUL = {
+				define_ruler = {
+					name = "Shaka"
+					dynasty = "Zulu"
+					adm = 3
+					dip = 1
+					mil = 6
+					claim = 100
+					fixed = yes
+					age = 20
+					male = yes
+
+				}
+				add_ruler_personality = strict_personality
+				set_capital = 789
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 2
+				}
+				add_manpower = 10
+				add_treasury = 150
+			}
+		}
+		switch_tag = ZUL
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = "zul_mod.1.b"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = zul_mod.2
+	title = "zul_mod.2.t"
+	desc = zul_mod.2.d
+	picture = MONGOL_BANNERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ZUL
+		has_ruler = "Shaka"
+	}
+
+	mean_time_to_happen = {
+		months = 6 
+	}
+
+	option = {
+		name = "zul_mod.2.a"
+
+		ZUL = {
+			define_ruler_to_general = {
+				fire = 3
+				shock = 6
+				manuever = 5 
+				siege = 3
+			}
+		}
+		}
+}

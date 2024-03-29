@@ -1,0 +1,420 @@
+LFA_development_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_expand_mining_operations = {
+		icon = mission_dalaskogen
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_development_capital = {
+		icon = imperial_capitals
+		position = 2
+		required_missions = { lfa_expand_mining_operations } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_promote_urbanization = {
+		icon = promote_urbanization
+		position = 3
+		required_missions = { lfa_development_capital } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_breakneck_industrialization = {
+		icon = mission_rb_prospect_for_coal
+		position = 4
+		required_missions = {
+			lfa_promote_urbanization
+			lfa_the_cloves
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_development_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_spice_market = {
+		icon = per_muslim_integration
+		position = 2
+		required_missions = { lfa_expand_mining_operations } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_the_cloves = {
+		icon = mission_mnd_maj_cloves
+		position = 3
+		required_missions = { lfa_spice_market } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_allies_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_strong_alliances = {
+		icon = mission_reliable_allies
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_expansive_trade_allies = {
+		icon = mission_alliances
+		position = 2
+		required_missions = { lfa_strong_alliances } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	LFA_economic_subjects = {
+		icon = mission_african_gold
+		position = 3
+		required_missions = {
+			lfa_expansive_trade_allies
+			lfa_gold_trade
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_allies_2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_gold_trade = {
+		icon = mission_zambezi_gold
+		position = 2
+		required_missions = { lfa_strong_alliances } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_china_diplomacy = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_ties_with_china = {
+		icon = qng_balance_mandate
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+lfa_cultures_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_the_cultures = {
+		icon = jap_balance_shinokosho
+		position = 3
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_religious_situation = {
+		icon = balance_the_estates
+		position = 4
+		required_missions = { lfa_the_cultures } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+lfa_cultures_1 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_foreign_influence = {
+		icon = per_the_persian_influence
+		position = 4
+		required_missions = { lfa_the_cultures } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_conquest_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_singapore_strategy = {
+		icon = mission_portuguese_malacca
+		position = 6
+		required_missions = { lfa_five_great_campaigns } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_mainland_connection = {
+		icon = fortress_of_belgrade
+		position = 7
+		required_missions = { lfa_singapore_strategy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_conquest_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_sumatra_campaign = {
+		icon = per_sword_of_our_faith
+		position = 6
+		required_missions = { lfa_five_great_campaigns } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_heart_of_trade = {
+		icon = indonesian_trade
+		position = 7
+		required_missions = {
+			lfa_singapore_strategy
+			lfa_sumatra_campaign
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_establish_western_states = {
+		icon = conquer_malacca
+		position = 8
+		required_missions = {
+			lfa_heart_of_trade
+			lfa_two_culture_system
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_conquest_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_five_great_campaigns = {
+		icon = qng_ten_grand_campaigns
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_conquest_brueni = {
+		icon = mission_mnd_maj_rein_in_brunei
+		position = 6
+		required_missions = { lfa_five_great_campaigns } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_two_culture_system = {
+		icon = mng_deal_kama_kagyu
+		position = 7
+		required_missions = { lfa_conquest_brueni } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_the_kutai_proposal = {
+		icon = appease_the_estates
+		position = 8
+		required_missions = { lfa_two_culture_system } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_federalize_the_state = {
+		icon = mission_plc_governance_act
+		position = 9
+		required_missions = {
+			lfa_establish_western_states
+			lfa_the_kutai_proposal
+			lfa_native_protection_act
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_conquest_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_end_java_feud = {
+		icon = mnd_maj_sunda_relations
+		position = 6
+		required_missions = { lfa_five_great_campaigns } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_claim_the_majapahit = {
+		icon = mission_a_great_mandala
+		position = 7
+		required_missions = {
+			lfa_end_java_feud
+			lfa_assimilate_sulawesi
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_native_protection_act = {
+		icon = mission_native_dev_capital
+		position = 8
+		required_missions = {
+			lfa_two_culture_system
+			lfa_claim_the_majapahit
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_conquest_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_assimilate_sulawesi = {
+		icon = mission_mnd_maj_subjugate_makassar
+		position = 6
+		required_missions = { lfa_five_great_campaigns } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_control_sulawesi = {
+		icon = mission_convert_bengal
+		position = 7
+		required_missions = { lfa_assimilate_sulawesi } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
