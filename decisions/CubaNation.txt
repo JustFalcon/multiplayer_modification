@@ -82,7 +82,7 @@ country_decisions = {
 			hidden_effect = {
 				change_estate_land_share = {
 					estate = estate_nobles
-					share = 17
+					share = 19
 				}
 				change_estate_land_share = {
 					estate = estate_burghers
