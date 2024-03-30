@@ -33,7 +33,18 @@ country_decisions = {
 				change_religion = confucianism
 				add_base_production = 3
 			}
-			release = LFA
+			if = {
+				limit = {
+					ai = yes
+				}
+				release = LFA
+			}
+			if = {
+				limit = {
+					ai = no
+				}
+				create_vassal = LFA
+			}
 			LFA = {
 				change_primary_culture = hakka
 				change_religion = confucianism
