@@ -1,0 +1,34 @@
+namespace = portugal_republic
+
+# Tariffs Too High
+country_event = {
+	id = portugal_republic.1
+	title = "portugal_republic.EVTNAME1"
+	desc = "portugal_republic.EVTDESC1"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = no
+	
+	trigger = {
+		POR = {
+			government = republic
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "portugal_republic.EVTOPTA1"	# Better show them who rule the colonies
+		add_government_reform = carnation_republic
+		change_country_color = {
+			color = { 15 128 45 }
+		}
+		hidden_effect = {
+			set_country_flag = carnation_revolt
+			set_country_flag = crn_color_set_g
+			override_country_name = por_republic
+		}
+	}
+}

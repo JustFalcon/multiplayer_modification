@@ -10,7 +10,10 @@
  carnation_gov_leader_1_f:0 "Prime Minister"
  carnation_gov_leader_2_f:0 "Prime Minister"
  carnation_gov_leader_3_f:0 "Prime Minister"
- 
+ portugal_republic.EVTNAME1:0 "The Carnation Revolution"
+ portugal_republic.EVTDESC1:0 "The Dawn of the Portuguese Republic was not a surprise to the people, after centuries of light rule by the Monarchy and oppression from the nobles, the people have finally risen up alongside the armies in a peaceful 'carnation' revolution, throwing carnations across streets and into palaces as a sign of change. The Portuguese Republic is here, and its here to stay."
+ portugal_republic.EVTOPTA1:0 "Pátria e Liberdade"
+ por_republic:0 "Portuguese Republic"
  
  
  

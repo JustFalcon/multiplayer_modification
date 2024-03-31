@@ -4161,7 +4161,11 @@ carnation_republic = {
 	potential = {
 		AND = {
 			tag = POR
-			has_country_flag = carnation_revolt
+			government = republic
+			OR = {
+				has_country_flag = carnation_revolt
+				ai = no
+			}
 		}
 	}
 	trigger = {
