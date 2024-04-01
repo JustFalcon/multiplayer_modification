@@ -1,0 +1,33 @@
+country_decisions = {
+	por_color_picker_choice = {
+		color = { 140 65 166 }
+		potential = {
+			tag = POR
+			has_reform = carnation_republic
+		}
+		allow = {
+			tag = POR
+			custom_trigger_tooltip = {
+				tooltip = por_color_cooldown
+				OR = {
+					had_country_flag = {
+						flag = por_color_cooldown
+						days = 3650
+					}
+					has_country_flag = just_formed_por_republic
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = portugal_republic.2
+			}
+			clr_country_flag = por_color_cooldown
+			clr_country_flag = just_formed_por_republic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

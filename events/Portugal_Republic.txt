@@ -23,13 +23,70 @@ country_event = {
 	option = {
 		name = "portugal_republic.EVTOPTA1"	# Better show them who rule the colonies
 		add_government_reform = carnation_republic
-		change_country_color = {
-			color = { 15 128 45 }
-		}
 		hidden_effect = {
 			set_country_flag = carnation_revolt
-			set_country_flag = crn_color_set_g
+			set_country_flag = just_formed_por_republic
 			override_country_name = por_republic
+			country_event = {
+				id = portugal_republic.2
+				random = 5
+			}
 		}
+	}
+}
+
+country_event = {
+	id = portugal_republic.2
+	title = "portugal_republic.colorpickertitle"
+	desc = "portugal_republic.colorpickerdesc"
+	picture = HISPANIC_MONARCHY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = "portugal_republic.colorchoice1" # Republican Green
+		hidden_effect = {
+			change_country_color = {
+				color = { 15 128 45 }
+			}
+			set_country_flag = por_color_cooldown
+		}
+	}
+	option = {
+		name = "portugal_republic.colorchoice2" # Carnation Red
+		hidden_effect = {
+			change_country_color = {
+				color = { 101 19 33 }
+			}
+			set_country_flag = por_color_cooldown
+		}
+	}
+	option = {
+		name = "portugal_republic.colorchoice3" #Teal Blue
+		hidden_effect = {
+			change_country_color = {
+				color = { 8 145 175 }
+			}
+			set_country_flag = por_color_cooldown
+		}
+	}
+	option = {
+		name = "portugal_republic.colorchoice4" #Royal Blue
+		hidden_effect = {
+			change_country_color = {
+				color = { 0 42 120 }
+			}
+			set_country_flag = por_color_cooldown
+		}
+	}
+	option = {
+		name = "portugal_republic.colorchoice5" #Reset Color
+		hidden_effect = {
+			restore_country_color = yes
+		}
+		set_country_flag = por_color_cooldown
 	}
 }

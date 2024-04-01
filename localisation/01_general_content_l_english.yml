@@ -14,6 +14,17 @@
  portugal_republic.EVTDESC1:0 "The Dawn of the Portuguese Republic was not a surprise to the people, after centuries of light rule by the Monarchy and oppression from the nobles, the people have finally risen up alongside the armies in a peaceful 'carnation' revolution, throwing carnations across streets and into palaces as a sign of change. The Portuguese Republic is here, and its here to stay."
  portugal_republic.EVTOPTA1:0 "Pátria e Liberdade"
  por_republic:0 "Portuguese Republic"
+ portugal_republic.colorpickertitle:0 "Portuguese Color Choice"
+ portugal_republic.colorpickerdesc:0 "Pick a new country color. This can be changed later."
+ portugal_republic.colorchoice1:0 "Republican Green"
+ portugal_republic.colorchoice2:0 "Carnation Red"
+ portugal_republic.colorchoice3:0 "Teal Blue"
+ portugal_republic.colorchoice4:0 "Royal Blue"
+ portugal_republic.colorchoice5:0 "§BRestore Original Country Color§!"
+ por_color_picker_choice_title:0 "Change Country Color"
+ por_color_picker_choice_desc:0 "You can change the Portugal country color every 10 years."
+ por_color_cooldown:0 "Has been 10 Years since last color change."
+ just_formed_por_republic:0 "Recently formed the Republic"
  
  
  
