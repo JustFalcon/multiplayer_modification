@@ -4157,15 +4157,13 @@ cuban_1st_caribbean_republic = {
 
 carnation_republic = {
 	icon = "trading_city"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		AND = {
 			tag = POR
 			government = republic
-			OR = {
-				has_country_flag = carnation_revolt
-				ai = no
-			}
+			has_reform = carnation_republic
 		}
 	}
 	trigger = {
@@ -4188,6 +4186,7 @@ carnation_republic = {
 		has_parliament = yes
 		has_limited_terms = yes
 		has_candidate_bonus = yes
+		locked_government_type = yes
 	}
 	duration = 6
 }
