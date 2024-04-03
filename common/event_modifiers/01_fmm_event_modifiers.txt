@@ -12,4 +12,9 @@ cuban_development_republic_modifier = {
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 }
-
+por_capital_of_iberia = {
+	local_development_cost = -0.15
+	allowed_num_of_buildings = 2
+	allowed_num_of_manufactories = 1
+	province_trade_power_modifier = 0.1
+}

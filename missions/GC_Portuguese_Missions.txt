@@ -319,7 +319,7 @@ gc_por_1 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1984,6 +1984,13 @@ gc_por_5_continued = {
 				name = "por_houses_of_trade"
 				duration = 7300
 			}
+			227 = {
+				add_province_modifier = {
+					name = por_capital_of_iberia
+					duration = -1
+					desc = por_capital_of_iberia_desc
+				}
+			}
 		}
 	}
 	gc_por_universities = {
@@ -1992,27 +1999,54 @@ gc_por_5_continued = {
 		position = 11
 		provinces_to_highlight = {
 			province_id = 227
-			NOT = { 
-				has_building = university 
-				owned_by = ROOT
+			NOT = {
+				OR = {
+					AND = {
+						has_building = university 
+						owned_by = ROOT
+					}
+					AND = {
+						owned_by = ROOT
+						development = 30
+					}
+				} 
 			}			
 		}
 		
 		trigger = {
-			num_of_owned_provinces_with = {
-				has_building = university 
-				value = 8 
+			OR = {
+				AND = {
+					num_of_owned_provinces_with = {
+						has_building = university 
+						value = 8 
+					}
+					227 = {
+						has_building = university
+						owned_by = ROOt
+					}
+				}
+				AND = {
+					num_of_owned_provinces_with = {
+						development = 30
+						value = 8
+					}
+					227 = {
+						development = 30
+						owned_by = ROOT
+					}
+				}
 			}
-			227 = {
-				has_building = university
-				owned_by = ROOt
-			}
+
+
+			
 		}
 		effect = {
 			add_country_modifier = {
 				name = "por_arts_and_letters"
 				duration = 7300
 			}
+			add_prestige = 25
+			change_innovativeness = 3
 		}
 	}
 }
