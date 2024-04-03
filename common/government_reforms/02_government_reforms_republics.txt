@@ -4080,7 +4080,7 @@ cuban_reformed_colonial_admin = {
 	duration = 7
 }
 
-cuban_1st_caribbean_republic = {
+cuban_1st_caribbean_republic = {  # Only Avaliable after conquering the whole carribean
 	icon = "private_enterprise_colony_government"
 	valid_for_nation_designer = no
 	lock_level_when_selected = no
@@ -4095,13 +4095,12 @@ cuban_1st_caribbean_republic = {
 		
 	}
 	modifiers = {
-		embracement_cost = -0.35
 		merchants = 1
 		production_efficiency = 0.05
 		global_unrest = -2
 		diplomatic_upkeep = 2
 		reduced_liberty_desire = 15
-		diplomatic_annexation_cost = 0.50
+		governing_capacity_modifier = -0.5
 	}
 
 
@@ -4133,12 +4132,12 @@ cuban_1st_caribbean_republic = {
 	}
 
 	
-	custom_tooltip = cub_interior_development
 	custom_attributes = {
 		has_parliament = yes
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+		enables_carribean_development = yes
 	}
 	duration = 5
 

@@ -25,9 +25,12 @@
  cuban_development_republic_modifier:0 "Cuban Interior Development Plan"
  cuban_development_republic_modifier_desc:0 "While territory outside of the Caribbean does not interest us, the islands of our nation are of the utmost importance and shall be treasured."
  cub_interior_development:0 "Access to Cuban Interior Development Mechanics"
+ desc_cuban_development_republic_modifier:0 "While territory outside of the Caribbean does not interest us, the islands of our nation are of the utmost importance and shall be treasured."
+ cub_interior_development:0 "Access to Cuban Interior Development Mechanics"
  cuba_gov_rank_title:0 "Reformed Colonial Republic"
  cuba_gov_leader_1:0 "Citizen-General"
  cuba_gov_leader_1_fem:0 "Citizen-Generaless"
+ mechanic_enables_carribean_development_yes:0 "Enables §YCarribean Interior Development§! Mechanics" 
  
  
  
