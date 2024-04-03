@@ -1,0 +1,19 @@
+cb_cub_liberation = {
+
+	prerequisites_self = {
+		OR = {
+			has_reform = cuban_reformed_colonial_admin
+			has_reform = cuban_1st_caribbean_republic
+		}
+	}
+	prerequisites = {
+		FROM = {
+			num_of_subjects = 1
+			any_subject_country = {
+				is_colonial_nation = yes
+			}
+		}
+	}
+
+	war_goal = take_capital_liberation_colonial
+}

@@ -4140,18 +4140,6 @@ cuban_1st_caribbean_republic = {  # Only Avaliable after conquering the whole ca
 		enables_carribean_development = yes
 	}
 	duration = 5
-
-	# Add Caribbean Republic Mechanics
-	# 	Concerning owning only Caribbean land and penalties outside of it
-	#	Adds dev reduction and production buffs/manpower buffs to the caribbean while outrageously damaging land outside of the region
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-
 }
 
 carnation_republic = {

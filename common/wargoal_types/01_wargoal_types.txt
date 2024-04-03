@@ -1,0 +1,29 @@
+take_capital_liberation_colonial = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 3
+		peace_cost_factor = 0.75	
+		
+		peace_options = {
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+		}
+		
+		country_desc = ALL_OPPRESSORS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = LIBERATION_WAR_NAME	
+}
