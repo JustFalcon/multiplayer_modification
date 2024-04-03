@@ -25,6 +25,13 @@
  por_color_picker_choice_desc:0 "You can change the Portugal country color every 10 years."
  por_color_cooldown:0 "Has been 10 Years since last color change."
  just_formed_por_republic:0 "Recently formed the Republic"
+ portugal_republic.rename_event_empire_title:0 "Proclaiming the Empire"
+ portugal_republic.rename_event_empire_desc:0 "The Kingdom of Portugal has secured hegemony over the Iberian Peninsula. With none left to contest our supremacy we have a choice to make, do we continue as we have been or do we proclaim ourselves annew and claim the titles of Empires past?"
+ portugal_republic.renameevent1:0 "We shall be known as the Portuguese Empire"
+ portugal_republic.renameevent2:0 "We claim the mantle of the Lusitanian Empire"
+ portugal_republic.renameevent3:0 "We are satisfied as we are."
+ portugal_empire:0 "Portuguese Empire"
+ lusitania_empire:0 "Lusitanian Empire"
  
  
  
