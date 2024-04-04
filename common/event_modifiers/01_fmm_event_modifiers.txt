@@ -18,3 +18,7 @@ por_capital_of_iberia = {
 	allowed_num_of_manufactories = 1
 	province_trade_power_modifier = 0.1
 }
+por_amphibious_empowered_marines = {
+	is_marine_modifier = yes
+	shock_damage_received = -0.2	
+}
