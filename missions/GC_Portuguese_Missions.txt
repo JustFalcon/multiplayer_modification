@@ -227,7 +227,7 @@ gc_por_1 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 3
+			add_mercantilism = 5
 			
 			if = { 
 				limit = { has_dlc = "Domination" }
