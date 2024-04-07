@@ -805,7 +805,7 @@ gc_por_2_c = {
 		trigger = {
 			mission_completed = dom_por_clash_ottomans
 			stability > 1
-			army_professionalism > 0.59
+			army_professionalism > 0.6
 			reform_level = 5
 			num_of_marines > 50
 			num_of_light_ship > 50
