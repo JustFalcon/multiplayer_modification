@@ -22,3 +22,7 @@ por_amphibious_empowered_marines = {
 	is_marine_modifier = yes
 	shock_damage_received = -0.2	
 }
+por_prestor_john_relation = {
+	diplomatic_upkeep = 1
+	land_attrition = -0.1
+}

@@ -1032,6 +1032,30 @@ gc_por_3 = {
 			}
 		}
 	}	
+	gc_por_prestor_john = {
+		icon = mission_african_gold
+		required_missions = { gc_por_discovers_horn_africa }
+		position = 5
+		
+		trigger = {
+			alliance_with = ETH
+			ETH = {
+				has_opinion = {
+					who = POR
+					value = 150
+				}
+			}	
+		}
+		effect = {
+			add_country_modifier = {
+				name = por_prestor_john_relation
+				duration = -1
+			}
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+		}
+	}	
 	
 	gc_por_indian_investment = {
 		icon = mission_indian_trade_company

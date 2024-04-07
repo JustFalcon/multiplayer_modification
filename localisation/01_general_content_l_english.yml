@@ -48,6 +48,12 @@
  mechanic_por_stronger_marines_yes:0 "§YMarines§! gain the following bonus:\n   Regiment Manpower Usage: §G-20.0%§!\n   Shock Damage Recieved: §G-20.0%§!"
  por_amphibious_empowered_marines:0 "Portuguese Empowered Marines"
  desc_por_amphibious_empowered_marines:0 "Null"
+ por_prestor_john_relation:0 "Alliance with Prestor John"
+ desc_por_prestor_john_relation:0 "We have aligned ourselves with Prestor John!"
+ por_prestor_john_relation_desc:0 "We have aligned ourselves with Prestor John!"
+ gc_por_prestor_john_title:0 "Land of Prestor John"
+ gc_por_prestor_john_desc:0 "With our alliance with the Great Kingdom of Prestor John, none shall deny our claims to the East!"
+ por_prestor_john_relation:0 "Alliance with Prestor John"
  
  
  
