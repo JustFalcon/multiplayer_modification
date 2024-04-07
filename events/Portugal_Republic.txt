@@ -114,3 +114,22 @@ country_event = {
 		add_prestige = 25
 	}
 }
+
+country_event = {
+	id = portugal_republic.4
+	title = "portugal_republic.maritime_army_title"
+	desc = "portugal_republic.maritime_army_desc"
+	picture = HARBOUR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "portugal_republic.maritime_army1"
+		add_government_reform = temp_hold #replace
+	}
+	option = {
+		name = "portugal_republic.maritime_army2"
+		change_government_reform_progress = 50
+	}
+}

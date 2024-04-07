@@ -2988,6 +2988,68 @@ ordennancas_reform = {
 	}
 }
 
+# Maritime Expansion Act
+maritime_expansion_act_reform = {
+	icon = "soldiers_6"
+	allow_normal_conversion = yes
+	potential = {
+		#has_dlc = "Domination"
+		#NOT = { religion_group = muslim }
+		OR = {
+			has_reform = maritime_expansion_act_reform
+			mission_completed = gc_por_expand_marines
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = maritime_expansion_act_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		regiment_disembark_speed = 0.25
+		transport_attrition = -0.35
+		global_sailors_modifier = 0.25
+		siege_blockade_progress = 1
+		navy_tradition_decay = -0.01
+
+	}
+
+	custom_attributes = {
+		por_stronger_marines = yes
+	}
+
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = amphibious_specialization_reform_modifier
+				duration = -1
+				hidden = yes
+			}
+			add_country_modifier = {
+				name = por_amphibious_empowered_marines
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = amphibious_specialization_reform_modifier
+		}
+		hidden_effect = {
+			remove_country_modifier = por_amphibious_empowered_marines
+		}
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
 #Aragonese
 revive_the_almogavars_reform = {
 	icon = "soldiers_6"

@@ -265,6 +265,7 @@ monarchy = {
 				tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
+				maritime_expansion_act_reform
 				revive_the_almogavars_reform
 				volunteers_of_the_faith_reform
 				condottieri_contracts_reform
@@ -747,6 +748,7 @@ republic = {
 				tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
+				maritime_expansion_act_reform
 				revive_the_almogavars_reform
 				volunteers_of_the_faith_reform
 				condottieri_contracts_reform
@@ -1038,6 +1040,7 @@ tribal = {
 				tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
+				maritime_expansion_act_reform
 				revive_the_almogavars_reform
 				volunteers_of_the_faith_reform
 				condottieri_contracts_reform
@@ -1284,6 +1287,7 @@ theocracy = {
 				tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
+				maritime_expansion_act_reform
 				revive_the_almogavars_reform
 				volunteers_of_the_faith_reform
 				condottieri_contracts_reform

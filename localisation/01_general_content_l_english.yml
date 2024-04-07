@@ -35,6 +35,19 @@
  por_capital_of_iberia:0 "Center of Iberian Trade"
  por_capital_of_iberia_desc:0 "The City of Lisboa has become the Heart of Iberian Trade, bringing prosperity to the city."
  por_amphibious_empowered_marines:0 "Portuguese Elite Marines"
+ gc_por_expand_marines_title:0 "Expand Maritime Soldiers"
+ gc_por_expand_marines_desc:0 "With the expansion of our kingdom across the waves, the need for a more robust maritime army has become obvious. Using our knowledge of the waves, we shall train the most elite set of marines in the world."
+ portugal_republic.maritime_army_title:0 "Maritime Expansion Act"
+ portugal_republic.maritime_army_desc:0 "With the dawn of the Portuguese Global Empire, it has become obvious to most in the army and navy that the soldiers they use must become more aclimated to life on the sea. In order to facilate this, the state has authorized the complete rework of the army structure to better facilitate naval and land warfare together."
+ portugal_republic.maritime_army1:0 "Enact the Maritime Expansion Act."
+ portugal_republic.maritime_army2:0 "Maybe at another time."
+ maritime_expansion_act_reform_title:0 "Maritime Expansion Act"
+ maritime_expansion_act_reform:0 "Maritime Expansion Act"
+ maritime_expansion_act_reform_desc:0 "The Maritime Expansion Act was a decree passed by the rulers of Portugal to better facilate a collaboration between the Army and Navy of the state to help administer their overseas possessions."
+ mechanic_por_stronger_marines_yes:0 "§YMarines§! gain the following bonus:\nRegiment Manpower Usage: §G-20.0%§!\nShock Damage Recieved: §G-20.0%§!"
+ por_amphibious_empowered_marines:0 "Portuguese Empowered Marines"
+ desc_por_amphibious_empowered_marines:0 "Null"
+ 
  
  
  
