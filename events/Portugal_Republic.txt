@@ -126,7 +126,7 @@ country_event = {
 
 	option = {
 		name = "portugal_republic.maritime_army1"
-		add_government_reform = temp_hold #replace
+		add_government_reform = maritime_expansion_act_reform
 	}
 	option = {
 		name = "portugal_republic.maritime_army2"

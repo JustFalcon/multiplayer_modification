@@ -803,18 +803,18 @@ gc_por_2_c = {
 		required_missions = { gc_por_flagship }
 		position = 11
 		trigger = {
-			stability > 0
+			mission_completed = dom_por_clash_ottomans
+			stability > 1
 			army_professionalism > 0.59
 			reform_level = 5
-			num_of_marines > 49
-			num_of_light_ship > 49
-			mission_completed = dom_por_clash_ottomans
+			num_of_marines > 50
+			num_of_light_ship > 50
 			OR = {
 				has_idea_group = maritime_ideas
 				has_idea_group = naval_ideas
 				AND = {
-					num_of_light_ship > 199
-					num_of_marines > 99
+					num_of_light_ship > 200
+					num_of_marines > 100
 					government_rank = 3
 				}
 			}

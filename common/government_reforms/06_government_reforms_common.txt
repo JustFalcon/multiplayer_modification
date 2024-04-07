@@ -2990,7 +2990,7 @@ ordennancas_reform = {
 
 # Maritime Expansion Act
 maritime_expansion_act_reform = {
-	icon = "soldiers_6"
+	icon = "infantry"
 	allow_normal_conversion = yes
 	potential = {
 		#has_dlc = "Domination"
