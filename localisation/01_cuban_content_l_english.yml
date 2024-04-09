@@ -35,6 +35,7 @@
  cb_cub_liberation_desc:0 "We have achieved freedom from our colonial overlords, it is now time to spread that freedom."
  take_capital_liberation_colonial:0 "Take the capital"
  take_capital_liberation_colonial_desc:0 "War goal is to take the capital."
+ cub_hacienda_system_reform:0 "Hacienda System"
  
  
  
