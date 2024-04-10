@@ -10,9 +10,13 @@ LFA_development_1 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			always = no
+		} 
 
-		effect = {  } 
+		effect = {  
+
+		} 
 	}
 
 	lfa_development_capital = {
@@ -92,7 +96,9 @@ LFA_allies_1 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			always = no
+		} 
 
 		effect = {  } 
 	}
@@ -152,7 +158,9 @@ LFA_china_diplomacy = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			always = no
+		}
 
 		effect = {  } 
 	}
@@ -169,7 +177,9 @@ lfa_cultures_2 = {
 		position = 3
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			always = no
+		}
 
 		effect = {  } 
 	}
@@ -290,7 +300,9 @@ LFA_conquest_3 = {
 		position = 5
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			always = no
+		}
 
 		effect = {  } 
 	}
