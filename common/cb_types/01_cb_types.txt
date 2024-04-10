@@ -17,3 +17,23 @@ cb_cub_liberation = {
 
 	war_goal = take_capital_liberation_colonial
 }
+
+por_india_conquest = {
+
+	prerequisites_self = {
+		AND = {
+			mission_completed = gc_por_malabar
+			tag = POR
+		}
+	}
+
+	prerequisites = {
+		FROM = {
+			capital_scope = {
+				superregion = india_superregion
+			}
+		}
+	}
+
+	war_goal = por_trade_company_asia
+}

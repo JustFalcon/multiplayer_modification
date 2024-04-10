@@ -27,3 +27,46 @@ take_capital_liberation_colonial = {
 
 	war_name = LIBERATION_WAR_NAME	
 }
+
+por_trade_company_asia = {
+	type = take_province
+
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 0.25
+		peace_cost_factor = 0.80
+
+		peace_options = {
+			po_demand_provinces
+			po_gold
+			po_steer_trade
+			po_trade_power
+		 }
+		allowed_provinces = {
+			OR = {
+				any_neighbor_province = {
+					owned_by = ROOT
+				}
+				is_core = ROOT
+				is_claim = ROOT
+			}
+			
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_return_cores
+			po_gold
+			po_humiliate
+		}
+	}
+
+	
+
+	war_name = TRADE_WAR_NAME
+}

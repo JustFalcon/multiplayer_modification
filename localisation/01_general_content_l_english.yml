@@ -54,6 +54,9 @@
  gc_por_prestor_john_title:0 "Land of Prestor John"
  gc_por_prestor_john_desc:0 "With our alliance with the Great Kingdom of Prestor John, none shall deny our claims to the East!"
  por_prestor_john_relation:0 "Alliance with Prestor John"
+ por_india_conquest:0 "Conquest of India"
+ por_india_conquest:0 "They hold land we desire."
+ por_india_conquest_cb:0 "Unlocks §YConquest of India§! Casus Belli on all neighboring provinces & claims in India."
  
  
  

@@ -591,6 +591,7 @@ gc_por_2_b = {
 			}
 		}
 		effect = {
+			custom_tooltip = por_india_conquest_cb
 			lanka_area = {
 				limit = {
 					NOT = { is_core = ROOT }
