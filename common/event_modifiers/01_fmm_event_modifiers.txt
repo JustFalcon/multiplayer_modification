@@ -12,6 +12,11 @@ cuban_development_republic_modifier = {
 	local_culture_conversion_cost = -0.25
 	local_culture_conversion_time = -0.25
 }
+cuban_republic_negative_outside_modifier = {
+	min_local_autonomy = 50
+	local_unrest = 2
+	local_governing_cost = 0.25
+}
 por_capital_of_iberia = {
 	local_development_cost = -0.15
 	allowed_num_of_buildings = 2

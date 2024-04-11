@@ -36,6 +36,8 @@
  take_capital_liberation_colonial:0 "Take the capital"
  take_capital_liberation_colonial_desc:0 "War goal is to take the capital."
  cub_hacienda_system_reform:0 "Hacienda System"
+ cuban_republic_negative_outside_modifier:0 "External Territorial Exploitation"
+ desc_cuban_republic_negative_outside_modifier:0 "Due to Cuba's Interior Development Mandate, the state refuses to designate resources to outside territories, heavily reducing the usefulness of such territory."
  
  
  

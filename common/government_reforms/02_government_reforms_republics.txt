@@ -4118,6 +4118,21 @@ cuban_1st_caribbean_republic = {  # Only Avaliable after conquering the whole ca
 				}
 			}
 		}
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						NOT = {
+							region = carribeans_region
+						}
+					}
+					add_province_modifier = {
+						name = cuban_republic_negative_outside_modifier
+						duration = -1
+					}
+				}
+			}
+		}
 	}
 
 	removed_effect = {
@@ -4127,6 +4142,12 @@ cuban_1st_caribbean_republic = {  # Only Avaliable after conquering the whole ca
 					has_province_modifier = cuban_development_republic_modifier
 				}
 				remove_province_modifier = cuban_development_republic_modifier
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = cuban_republic_negative_outside_modifier
+				}
+				remove_province_modifier = cuban_republic_negative_outside_modifier
 			}
 		}
 	}

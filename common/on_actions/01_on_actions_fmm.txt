@@ -17,4 +17,23 @@ on_province_owner_change = {
             # Insert Debuff for Outside Cuba Modifers
         }
 	}
+	if = {
+		limit = {
+			NOT = {
+				has_province_modifier = cuban_republic_negative_outside_modifier
+			}
+			owner = {
+				has_reform = cuban_1st_caribbean_republic
+			}
+			NOT = {
+				region = carribeans_region
+			}
+		}
+		hidden_effect = {
+			add_province_modifier = {
+				name = cuban_republic_negative_outside_modifier
+				duration = -1
+			}
+		}
+	}
 }
