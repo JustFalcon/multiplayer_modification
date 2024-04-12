@@ -31,3 +31,9 @@ por_prestor_john_relation = {
 	diplomatic_upkeep = 1
 	land_attrition = -0.1
 }
+cuban_hacienda_event_modifier = {
+	local_production_efficiency = 1.25
+}
+cuban_hacienda_event_recalibration = {
+	
+}

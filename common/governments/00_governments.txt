@@ -363,6 +363,7 @@ monarchy = {
 				#Visible when unlocked
 				#1.35
 				vodka_of_the_crown_reform
+				hacienda_estate_reform
 				jap_gokaido_reform
 				thalassocracy_reform
 				royal_charters_reform
@@ -829,6 +830,7 @@ republic = {
 				empowered_quartermasters_reform
 				#1.35
 				vodka_of_the_crown_reform
+				hacienda_estate_reform
 				jap_gokaido_reform
 				thalassocracy_reform
 				royal_charters_reform
@@ -1360,6 +1362,7 @@ theocracy = {
 				#Visible when unlocked
 				#1.35
 				vodka_of_the_crown_reform
+				hacienda_estate_reform
 				jap_gokaido_reform
 				thalassocracy_reform
 				royal_charters_reform

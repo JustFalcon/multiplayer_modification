@@ -35,10 +35,16 @@
  cb_cub_liberation_desc:0 "We have achieved freedom from our colonial overlords, it is now time to spread that freedom."
  take_capital_liberation_colonial:0 "Take the capital"
  take_capital_liberation_colonial_desc:0 "War goal is to take the capital."
- cub_hacienda_system_reform:0 "Hacienda System"
+ hacienda_estate_reform:0 "Hacienda System"
+ hacienda_estate_reform_desc:0 "The hacienda system of Argentina, Bolivia, Chile, Colombia, Guatemala, El Salvador, Mexico, New Granada, and Peru was an economic system of large land holdings. A similar system existed on a smaller scale in the Philippines and Puerto Rico. In Puerto Rico, haciendas were larger than estancias; ordinarily grew sugar cane, coffee, or cotton; and exported their crops abroad."
  cuban_republic_negative_outside_modifier:0 "External Territorial Exploitation"
  desc_cuban_republic_negative_outside_modifier:0 "Due to Cuba's Interior Development Mandate, the state refuses to designate resources to outside territories, heavily reducing the usefulness of such territory."
- 
+ mechanic_enables_hacienda_system_yes:0 "Every owned §YCocoa§!, §YCoffee§!, §YCotton§!, §YSugar§!, §YTea§!, and §YTobacco§! producing province with a §YManufactory§! gets the following bonuses:\nLocal Production Efficiency: §G+125.0%§!"
+ cuban_hacienda_event_modifier:0 "Hacienda System"
+ desc_cuban_hacienda_event_modifier:0 "This province is taking advantage of the §YHacienda System§!"
+ cuban_hacienda_event_recalibration_tooltip:0 "Has not recalibrated the Hacienda System in §Y5§1 Years"
+ hacienda_system_recalibrate:0 "Recalibrate Hacienda System"
+ hacienda_system_recalibrate_desc:0 "Due to the limitations of the EU4 Engine, it is not possible to easily check if a new manufactory is constructed in order to apply the Hacienda Buff. If you build a new plantation please fire this decision to get the buff."
  
  
  

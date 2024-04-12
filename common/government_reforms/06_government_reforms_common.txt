@@ -4636,3 +4636,72 @@ integrated_ottoman_officials = {
 		factor = 10
 	}
 }
+
+hacienda_estate_reform = {
+	icon = "diwan_al_khass_reform"
+	allow_normal_conversion = yes
+	potential = {
+		AND = {
+			culture_group = iberian
+			NOT = {
+				OR = {
+					culture = brazilian
+					culture = portugese
+				}
+			}
+		}
+		OR = {
+			is_former_colonial_nation = yes
+			is_colonial_nation = yes
+			tag = CUB
+		}
+	}
+	modifiers = {
+		global_missionary_strength = 0.01
+		global_tax_modifier = -0.2
+	}
+
+	custom_attributes = {
+		enables_hacienda_system = yes
+	}
+
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						has_building = plantations
+						OR = {
+							trade_goods = cocoa
+							trade_goods = sugar
+							trade_goods = coffee
+							trade_goods = cotton
+							trade_goods = tea
+							trade_goods = tobacco
+						}
+					}
+					add_province_modifier = {
+						name = cuban_hacienda_event_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = cuban_hacienda_event_modifier
+				}
+				remove_province_modifier = cuban_hacienda_event_modifier
+			}
+		}
+	}
+
+	ai = {
+		factor = 100
+	}
+}

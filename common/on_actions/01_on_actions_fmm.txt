@@ -1,4 +1,6 @@
 on_province_owner_change = {
+
+	#1st Carribean Republic Mechanics
 	if = {
 		limit = {
 			NOT = {
@@ -36,4 +38,32 @@ on_province_owner_change = {
 			}
 		}
 	}
+
+	#Hacienda System Mechanics
+
+	if = {
+		limit = {
+			has_building = plantations
+			OR = {
+				trade_goods = cocoa
+				trade_goods = sugar
+				trade_goods = coffee
+				trade_goods = cotton
+				trade_goods = tea
+				trade_goods = tobacco
+			}
+			owner = {
+				has_reform = hacienda_estate_reform
+			}
+		}
+		hidden_effect = {
+			add_province_modifier = {
+				name = cuban_hacienda_event_modifier
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
 }
+
+
