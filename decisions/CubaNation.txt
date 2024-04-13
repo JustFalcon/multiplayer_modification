@@ -145,6 +145,7 @@ country_decisions = {
 
 
 	hacienda_system_recalibrate = {
+		color = { 192 192 192 }
 		potential = {
 			has_reform = hacienda_estate_reform
 		}
@@ -172,6 +173,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			custom_tooltip = will_recalibrate_hacienda
 			hidden_effect = {
 				every_owned_province = {
 					if = {

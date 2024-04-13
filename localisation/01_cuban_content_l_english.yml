@@ -43,8 +43,9 @@
  cuban_hacienda_event_modifier:0 "Hacienda System"
  desc_cuban_hacienda_event_modifier:0 "This province is taking advantage of the §YHacienda System§!"
  cuban_hacienda_event_recalibration_tooltip:0 "Has not recalibrated the Hacienda System in §Y5§1 Years"
- hacienda_system_recalibrate:0 "Recalibrate Hacienda System"
+ hacienda_system_recalibrate_title:0 "Recalibrate Hacienda System"
  hacienda_system_recalibrate_desc:0 "Due to the limitations of the EU4 Engine, it is not possible to easily check if a new manufactory is constructed in order to apply the Hacienda Buff. If you build a new plantation please fire this decision to get the buff."
+ will_recalibrate_hacienda:0 "Will Recalibrate §YHacienda System§! Calcululations"
  
  
  
