@@ -46,6 +46,13 @@
  hacienda_system_recalibrate_title:0 "Recalibrate Hacienda System"
  hacienda_system_recalibrate_desc:0 "Due to the limitations of the EU4 Engine, it is not possible to easily check if a new manufactory is constructed in order to apply the Hacienda Buff. If you build a new plantation please fire this decision to get the buff."
  will_recalibrate_hacienda:0 "Will Recalibrate §YHacienda System§! Calcululations"
+ cub_antilles_republic:0 "Antilles Republic"
+ cub_antilles_republic_ADJ:0 "Antillean"
+ cuban_event.EVTNAME1:0 "The Antilles Proposal"
+ cuban_event.EVTDESC1:0 "The Antilles Proposal is a radical new proposal by Nationalists in our government. It comes riding upon the wave of Anti-Spanish Sentiment due to the siege of their capital and their coresponding reprisals. This idea proposes that we distance ourselves from our old Spanish Identity and embrace a new, more modern identity."
+ cuban_event.EVTOPTA1:0 "The Dawn"
+ cuban_event.EVTOPTA2:0 "This is crazy!"
+ 
  
  
  

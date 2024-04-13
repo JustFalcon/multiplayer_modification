@@ -1,0 +1,42 @@
+namespace = cuban_event
+
+country_event = {
+	id = cuban_event.1  #Antilles Republic
+	title = "cuban_event.EVTNAME1"
+	desc = "cuban_event.EVTDESC1"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		219 = {
+			controlled_by = CUB
+		}
+		CUB = {
+			has_reform = cuban_1st_caribbean_republic
+		}
+
+		
+	}
+
+	option = {
+		name = "cuban_event.EVTOPTA1"	# We are the Antilles Republic!
+		override_country_name = cub_antilles_republic
+		hidden_effect = {
+			CUB = {
+				change_country_color = {
+					color = { 252 123 3 }
+				}
+			}
+		}
+
+
+	}
+
+	option = {
+		name = "cuban_event.EVTOPTA2"  # This is crazy!
+		add_stability = 1
+		add_dip_power = 50
+	}
+}
