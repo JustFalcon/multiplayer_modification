@@ -52,6 +52,9 @@
  cuban_event.EVTDESC1:0 "The Antilles Proposal is a radical new proposal by Nationalists in our government. It comes riding upon the wave of Anti-Spanish Sentiment due to the siege of their capital and their coresponding reprisals. This idea proposes that we distance ourselves from our old Spanish Identity and embrace a new, more modern identity."
  cuban_event.EVTOPTA1:0 "The Dawn"
  cuban_event.EVTOPTA2:0 "This is crazy!"
+ cuban_event.evt2_title:0 "Title"
+ cuban_event.evt2_desc:0 "Desc"
+ cuban_event.evt2_option1:0 "Choice"
  
  
  

@@ -23,6 +23,7 @@ country_event = {
 	option = {
 		name = "cuban_event.EVTOPTA1"	# We are the Antilles Republic!
 		override_country_name = cub_antilles_republic
+		set_country_flag = cub_antilles_republic_flag
 		hidden_effect = {
 			CUB = {
 				change_country_color = {
@@ -40,3 +41,36 @@ country_event = {
 		add_dip_power = 50
 	}
 }
+
+country_event = {
+	id = cuban_event.2  #Antilles Republic Stuff (aka adding their Ruler from Antiless Republic Nation RP
+	title = "cuban_event.evt2_title"
+	desc = "cuban_event.evt2_desc"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = cub_antilles_republic_flag
+		stability = 3
+		ruler_age > 55
+	}
+
+	option = {
+		name = "cuban_event.evt2_option1"
+		CUB = {
+			define_ruler = {
+				name = "Placeholder"
+				dynasty = "von Placerholdersan"
+				adm = 5
+				dip = 5
+				mil = 5
+				age = 21
+				female = yes
+				culture = mexican
+			}
+		}
+	}
+}
+
