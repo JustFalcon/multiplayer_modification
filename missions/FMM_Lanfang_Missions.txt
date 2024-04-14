@@ -11,11 +11,24 @@ LFA_development_1 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {  
-			always = no
+			4802 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 10
+			}
 		} 
 
 		effect = {  
-
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_control_over_the_mint
+			}
+			4802 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
+			}
 		} 
 	}
 
