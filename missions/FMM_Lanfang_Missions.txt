@@ -341,9 +341,66 @@ LFA_conquest_3 = {
 		required_missions = { lfa_five_great_campaigns } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			exclude_from_progress = {
+				kalimantan_area = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_empty = yes
+					}
+					type = all
+				}
+				banjar_area = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_empty = yes
+					}
+					type = all
+				}
+				brunei_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+					type = all
+				}
+				sabah_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+					type = all
+				}
+				kutai_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+					type = all
+				}
 
-		effect = {  } 
+			}
+		} 
+
+		effect = {  
+			if = {
+				limit = {
+					2706 = {
+						is_empty = yes
+					}
+				}
+				2706 = {
+					add_siberian_construction = 400
+				}
+			}
+			if = {
+				limit = {
+					2708 = {
+						is_empty = yes
+					}
+				}
+				2708 = {
+					add_siberian_construction = 400
+				}
+			}
+			add_mil_power = 100
+
+
+
+
+
+		} 
 	}
 
 	lfa_two_culture_system = {
