@@ -37,3 +37,11 @@ cuban_hacienda_event_modifier = {
 cuban_hacienda_event_recalibration = {
 	
 }
+
+capital_of_the_kongsis = {
+	local_development_cost = -0.25
+	local_tax_modifier = 0.25
+	allowed_num_of_manufactories = 2
+	local_governing_cost = -0.25
+	local_gold_depletion_chance_modifier = -1
+}

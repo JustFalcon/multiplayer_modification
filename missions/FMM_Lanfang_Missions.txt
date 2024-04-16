@@ -38,9 +38,24 @@ LFA_development_1 = {
 		required_missions = { lfa_expand_mining_operations } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			4802 = {
+				num_of_times_improved = 10
+				num_of_times_expanded_infrastructure = 3
+				num_of_buildings_in_province = 5
+			}
+		} 
 
-		effect = {  } 
+		effect = {  
+			4802 = {
+				add_province_modifier = {
+					name = capital_of_the_kongsis
+					duration = -1
+				}
+			}
+			change_government_reform_progress = 100
+			add_stability = 1
+		} 
 	}
 
 	lfa_promote_urbanization = {
