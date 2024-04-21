@@ -395,11 +395,6 @@ LFA_conquest_3 = {
 				}
 			}
 			add_mil_power = 100
-
-
-
-
-
 		} 
 	}
 
