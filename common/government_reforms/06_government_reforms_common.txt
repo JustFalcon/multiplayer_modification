@@ -2242,21 +2242,14 @@ hybrid_forces_reform = {
 		tag = LFA
 	}
 	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = sustained_discipline_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
 		tag = LFA
 	}
 	modifiers = {
-		allowed_marine_fraction = 0.50
-		regiment_disembark_speed = 0.15
-		drill_gain_modifier = 0.25
-		drill_decay_modifier = -0.25
+		artillery_barrage_cost = -0.75
+		artillery_cost = -0.5
+		artillery_levels_available_vs_fort = 1
 	}
+
 	
 	ai = {
 		factor = 1
