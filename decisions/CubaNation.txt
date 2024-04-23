@@ -70,6 +70,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			change_tag = CUB
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
 			hidden_effect = {
 				if = {
 					limit = {
@@ -89,8 +92,6 @@ country_decisions = {
 					share = 13
 				}
 			}
-			change_tag = CUB
-			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }

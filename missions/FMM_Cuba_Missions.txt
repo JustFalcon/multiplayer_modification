@@ -1,0 +1,91 @@
+CUB_opening_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = CUB } 
+
+}
+CUB_opening_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = CUB } 
+
+	cub_secure_cuba = {
+		icon = explore_caribbean
+		position = 2
+		required_missions = { cub_opening_mission } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  
+			exclude_from_progress = {
+				cuba_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+					type = all
+				}
+				east_cuba_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+					type = all
+				}
+			}
+		} 
+
+		effect = {  } 
+	}
+}
+CUB_opening_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = CUB } 
+
+	cub_opening_mission = {
+		icon = mission_colonize_the_caribbean
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	cub_secure_hispanoliaiaiaia = {
+		icon = explore_caribbean
+		position = 2
+		required_missions = { cub_opening_mission } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+CUB_opening_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = CUB } 
+
+	cub_secure_lesser_antilles = {
+		icon = explore_caribbean
+		position = 2
+		required_missions = { cub_opening_mission } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+CUB_opening_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = CUB } 
+
+}
