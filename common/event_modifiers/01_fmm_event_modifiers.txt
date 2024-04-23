@@ -45,3 +45,10 @@ capital_of_the_kongsis = {
 	local_governing_cost = -0.25
 	local_gold_depletion_chance_modifier = -1
 }
+
+chinese_way_of_democracy = {
+	stability_cost_modifier = -0.25
+	republican_tradition = 0.15
+	diplomatic_reputation = 2
+	# yearly government power of some sort?
+}

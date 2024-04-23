@@ -890,7 +890,7 @@ kongsi_federation = {
 	modifiers = {
 		production_efficiency = 0.1
 		republican_tradition = 0.5
-		max_absolutism = -10
+		max_absolutism = -40
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes

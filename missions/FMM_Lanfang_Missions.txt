@@ -432,7 +432,12 @@ LFA_conquest_3 = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = {  
+			add_country_modifier = {
+				name = chinese_way_of_democracy
+				duration = -1
+			}
+		} 
 	}
 }
 LFA_conquest_4 = {

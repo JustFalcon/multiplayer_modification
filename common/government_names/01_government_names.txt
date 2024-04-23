@@ -49,6 +49,35 @@ carnation_republic = {
 	}
 }
 
+kongsi_federation = {
+	rank = {
+		1 = kongsi_gov_rank_title
+		2 = kongsi_gov_rank_title
+		3 = kongsi_gov_rank_title
+	}
+
+	ruler_male = {
+		1 = kongsi_gov_leader_1_m
+		2 = kongsi_gov_leader_2_m
+		3 = kongsi_gov_leader_3_m
+	}
+
+	ruler_female = {
+		1 = kongsi_gov_leader_1_f
+		2 = kongsi_gov_leader_2_f
+		3 = kongsi_gov_leader_3_f
+	}
+
+	trigger = {
+		has_reform = kongsi_federation
+		OR = {
+			tag = LFA
+			culture = hakka
+			#tag = NYA
+		}
+	}
+}
+
 gov_steppe_horde = {
 	rank = {
 		1 = HORDE
