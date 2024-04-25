@@ -1,0 +1,30 @@
+namespace = lanfang
+
+# Carnation Republic
+country_event = {
+	id = lanfang.1
+	title = "lanfang.nanyang"
+	desc = "lanfang.nanyang_desc"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		
+	}
+
+	option = {
+		name = "lanfang.nanyang_opt1"	# Better show them who rule the colonies
+		override_country_name = lfa_nanyang
+		custom_tooltip = lfa_country_color_change_tooltip
+		hidden_effect = {
+			set_country_flag = formed_nanyang
+			change_country_color = {
+				color = {
+					64 117 196
+				}
+			}
+		}
+	}
+}

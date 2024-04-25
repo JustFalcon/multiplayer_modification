@@ -437,6 +437,9 @@ LFA_conquest_3 = {
 				name = chinese_way_of_democracy
 				duration = -1
 			}
+			country_event = {
+				id = lanfang.1
+			}
 		} 
 	}
 }
