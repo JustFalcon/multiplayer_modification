@@ -11,7 +11,7 @@
  lfa_breakneck_industrialization_title:0 "Beating Heart of Industry"
  lfa_breakneck_industrialization_desc:0 ""
 
- lfa_spice_market_title:0 "The Spice Trade"
+ lfa_spice_market_title:0 "Monopolize Spice Market"
  lfa_spice_market_desc:0 ""
 
  lfa_the_cloves_title:0 "Expand Clove Supply"
@@ -26,20 +26,29 @@
  LFA_economic_subjects_title:0 "Economic Dependents"
  LFA_economic_subjects_desc:0 ""
 
- lfa_gold_trade_title:0 "The Gold Exchange"
- lfa_gold_trade_desc:0 ""
-
  lfa_ties_with_china_title:0 "Ties With the Emperor"
  lfa_ties_with_china_desc:0 ""
 
- lfa_the_cultures_title:0 "The Cultural Situation"
- lfa_the_cultures_desc:0 ""
+ lfa_gold_trade_title:0 "The Gold Exchange"
+ lfa_gold_trade_desc:0 ""
 
- lfa_religious_situation_title:0 "The Question of Religion"
- lfa_religious_situation_desc:0 ""
+ lfa_militarization_title:0 "Army of the Republic"
+ lfa_militarization_desc:0 ""
 
- lfa_foreign_influence_title:0 "Foreign Influence Act"
- lfa_foreign_influence_desc:0 ""
+ lfa_professional_soldiers_title:0 "Professional Soldiers"
+ lfa_professional_soldiers_desc:0 ""
+
+ lfa_hakka_siegeworks_title:0 "Hakka Siegeworks"
+ lfa_hakka_siegeworks_desc:0 ""
+
+ lfa_navy_republic_title:0 "Navy of the Republic"
+ lfa_navy_republic_desc:0 ""
+
+ lfa_grand_sea_dominance_title:0 "A Seaborne State"
+ lfa_grand_sea_dominance_desc:0 ""
+
+ lfa_marine_training_title:0 "Marine Training"
+ lfa_marine_training_desc:0 ""
 
  lfa_singapore_strategy_title:0 "The Singapore Strategy"
  lfa_singapore_strategy_desc:0 ""
@@ -87,3 +96,5 @@
  lfa_control_sulawesi_desc:0 ""
 
 
+ lfa_maritime_army_title:0 "Republican Marines"
+ lfa_maritime_army_desc:0 ""

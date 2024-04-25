@@ -10,26 +10,24 @@ LFA_development_1 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			4802 = {
 				owned_by = ROOT
 				is_core = ROOT
 				base_production = 10
 			}
-		} 
+		}
 
-		effect = {  
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_control_over_the_mint
-			}
+		effect = {
+			unlock_estate_privilege = { estate_privilege = estate_burghers_control_over_the_mint } 
 			4802 = {
 				add_local_autonomy = -100
 				add_province_modifier = {
-					name = eth_increased_gold_mining
+					name = "eth_increased_gold_mining"
 					duration = 9125
 				}
 			}
-		} 
+		}
 	}
 
 	lfa_development_capital = {
@@ -38,24 +36,24 @@ LFA_development_1 = {
 		required_missions = { lfa_expand_mining_operations } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			4802 = {
 				num_of_times_improved = 10
 				num_of_times_expanded_infrastructure = 3
 				num_of_buildings_in_province = 5
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			4802 = {
 				add_province_modifier = {
-					name = capital_of_the_kongsis
+					name = "capital_of_the_kongsis"
 					duration = -1
 				}
 			}
 			change_government_reform_progress = 100
 			add_stability = 1
-		} 
+		}
 	}
 
 	lfa_promote_urbanization = {
@@ -124,9 +122,7 @@ LFA_allies_1 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			always = no
-		} 
+		trigger = { always = no } 
 
 		effect = {  } 
 	}
@@ -163,59 +159,23 @@ LFA_allies_2 = {
 	has_country_shield = yes
 	potential = { tag = LFA } 
 
-	lfa_gold_trade = {
-		icon = mission_zambezi_gold
-		position = 2
-		required_missions = { lfa_strong_alliances } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-LFA_china_diplomacy = {
-	slot = 5
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = LFA } 
-
 	lfa_ties_with_china = {
 		icon = qng_balance_mandate
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			always = no
-		}
-
-		effect = {  } 
-	}
-}
-lfa_cultures_2 = {
-	slot = 5
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = LFA } 
-
-	lfa_the_cultures = {
-		icon = jap_balance_shinokosho
-		position = 3
-		provinces_to_highlight = {  } 
-
-		trigger = {  
-			always = no
-		}
+		trigger = { always = no } 
 
 		effect = {  } 
 	}
 
-	lfa_religious_situation = {
-		icon = balance_the_estates
-		position = 4
-		required_missions = { lfa_the_cultures } 
+	lfa_gold_trade = {
+		icon = mission_zambezi_gold
+		position = 2
+		required_missions = {
+			lfa_strong_alliances
+			lfa_ties_with_china
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -223,17 +183,90 @@ lfa_cultures_2 = {
 		effect = {  } 
 	}
 }
-lfa_cultures_1 = {
+LFA_military_branch_1 = {
 	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = LFA } 
 
-	lfa_foreign_influence = {
-		icon = per_the_persian_influence
+	lfa_militarization = {
+		icon = mission_modern_knight_army
+		position = 3
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_professional_soldiers = {
+		icon = army_reforms
 		position = 4
-		required_missions = { lfa_the_cultures } 
+		required_missions = { lfa_militarization } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_military_branch_0 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_hakka_siegeworks = {
+		icon = mission_cannons_firing
+		position = 4
+		required_missions = { lfa_militarization } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_military_branch_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = LFA } 
+
+	lfa_navy_republic = {
+		icon = mission_danish_navy
+		position = 3
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_grand_sea_dominance = {
+		icon = imperial_navy
+		position = 4
+		required_missions = {
+			lfa_navy_republic
+			lfa_militarization
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	lfa_marine_training = {
+		icon = mission_marines
+		position = 5
+		required_missions = {
+			lfa_professional_soldiers
+			lfa_grand_sea_dominance
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -328,7 +361,7 @@ LFA_conquest_3 = {
 		position = 5
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			mission_completed = lfa_ties_with_china
 			stability = 1
 			army_size_percentage = 1
@@ -341,76 +374,76 @@ LFA_conquest_3 = {
 			hidden_effect = {
 				4815 = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT } 
+						NOT = { is_permanent_claim = ROOT } 
 					}
 					add_permanent_claim = ROOT
 				}
 				kalimantan_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT } 
+						NOT = { is_permanent_claim = ROOT } 
 					}
 					add_permanent_claim = ROOT
 				}
 				brunei_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT } 
+						NOT = { is_permanent_claim = ROOT } 
 					}
 					add_permanent_claim = ROOT
 				}
 				banjar_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT } 
+						NOT = { is_permanent_claim = ROOT } 
 					}
 					add_permanent_claim = ROOT
 				}
 				kutai_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT } 
+						NOT = { is_permanent_claim = ROOT } 
 					}
 					add_permanent_claim = ROOT
 				}
 				sabah_area = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT } 
+						NOT = { is_permanent_claim = ROOT } 
 					}
 					add_permanent_claim = ROOT
 				}
 			}
 			jambi_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			south_sumatra_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			surabaya_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			makassar_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
-		} 
+		}
 	}
 
 	lfa_conquest_brueni = {
@@ -419,7 +452,7 @@ LFA_conquest_3 = {
 		required_missions = { lfa_five_great_campaigns } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  
+		trigger = {
 			exclude_from_progress = {
 				kalimantan_area = {
 					OR = {
@@ -447,33 +480,20 @@ LFA_conquest_3 = {
 					country_or_non_sovereign_subject_holds = ROOT
 					type = all
 				}
-
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			if = {
-				limit = {
-					2706 = {
-						is_empty = yes
-					}
-				}
-				2706 = {
-					add_siberian_construction = 400
-				}
+				limit = { 2706 = { is_empty = yes }  } 
+				2706 = { add_siberian_construction = 400 } 
 			}
 			if = {
-				limit = {
-					2708 = {
-						is_empty = yes
-					}
-				}
-				2708 = {
-					add_siberian_construction = 400
-				}
+				limit = { 2708 = { is_empty = yes }  } 
+				2708 = { add_siberian_construction = 400 } 
 			}
 			add_mil_power = 100
-		} 
+		}
 	}
 
 	lfa_two_culture_system = {
@@ -510,15 +530,13 @@ LFA_conquest_3 = {
 
 		trigger = {  } 
 
-		effect = {  
+		effect = {
 			add_country_modifier = {
-				name = chinese_way_of_democracy
+				name = "chinese_way_of_democracy"
 				duration = -1
 			}
-			country_event = {
-				id = lanfang.1
-			}
-		} 
+			country_event = { id = lanfang.1 } 
+		}
 	}
 }
 LFA_conquest_4 = {
