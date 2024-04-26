@@ -373,11 +373,13 @@ LFA_conquest_3 = {
 			custom_tooltip = lfa_borneo_claims
 			hidden_effect = {
 				4815 = {
-					limit = {
-						NOT = { is_core = ROOT } 
-						NOT = { is_permanent_claim = ROOT } 
+					if = {
+						limit = {
+							NOT = { is_core = ROOT } 
+							NOT = { is_permanent_claim = ROOT } 
+						}
+						add_permanent_claim = ROOT
 					}
-					add_permanent_claim = ROOT
 				}
 				kalimantan_area = {
 					limit = {
