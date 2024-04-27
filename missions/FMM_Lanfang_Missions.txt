@@ -164,9 +164,32 @@ LFA_allies_2 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = { always = no } 
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lfa_ties_with_china_total_tooltip
+				any_country = {
+					is_emperor_of_china = yes
+					OR = {
+						alliance_with = ROOT
+						AND = {
+							overlord_of = LFA
+							LFA = {
+								is_subject_of_type = tributary_state
+							}
+						}
+					}
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = { 
+			unlock_merc_company = {
+				merc_company = lfa_empire_voluntolds
+			}
+			hidden_effect = {
+				set_country_flag = unlocked_voluntalds
+			}
+		} 
 	}
 
 	lfa_gold_trade = {
@@ -537,7 +560,10 @@ LFA_conquest_3 = {
 				name = "chinese_way_of_democracy"
 				duration = -1
 			}
-			country_event = { id = lanfang.1 } 
+			country_event = { id = lanfang.1 }
+			hidden_effect = {
+				clr_country_flag = unlocked_voluntalds
+			} 
 		}
 	}
 }

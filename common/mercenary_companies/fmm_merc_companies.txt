@@ -1,0 +1,22 @@
+#
+# Example mercenary companies
+#
+lfa_empire_voluntolds = {
+    regiments_per_development = 0.07
+    cavalry_weight = 0.5
+    cavalry_cap = 10
+	cost_modifier = 0.25
+    home_province = 4802
+	trigger = {
+        is_allowed_to_recruit_mercenaries = yes
+        has_unlocked_merc_company = { merc_company = lfa_empire_voluntolds }
+        has_country_flag = unlocked_voluntalds
+    }
+	modifier = {
+		cavalry_power = 0.2
+	}
+    min_size = 8
+    max_size = 20
+    manpower_pool = 40
+    counts_towards_force_limit = no
+}
