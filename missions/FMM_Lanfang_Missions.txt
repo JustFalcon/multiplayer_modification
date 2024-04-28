@@ -173,23 +173,17 @@ LFA_allies_2 = {
 						alliance_with = ROOT
 						AND = {
 							overlord_of = LFA
-							LFA = {
-								is_subject_of_type = tributary_state
-							}
+							LFA = { is_subject_of_type = tributary_state } 
 						}
 					}
 				}
 			}
-		} 
+		}
 
-		effect = { 
-			unlock_merc_company = {
-				merc_company = lfa_empire_voluntolds
-			}
-			hidden_effect = {
-				set_country_flag = unlocked_voluntalds
-			}
-		} 
+		effect = {
+			unlock_merc_company = { merc_company = lfa_empire_voluntolds } 
+			hidden_effect = { set_country_flag = unlocked_voluntalds } 
+		}
 	}
 
 	lfa_gold_trade = {
@@ -560,10 +554,8 @@ LFA_conquest_3 = {
 				name = "chinese_way_of_democracy"
 				duration = -1
 			}
-			country_event = { id = lanfang.1 }
-			hidden_effect = {
-				clr_country_flag = unlocked_voluntalds
-			} 
+			country_event = { id = lanfang.1 } 
+			hidden_effect = { clr_country_flag = unlocked_voluntalds } 
 		}
 	}
 }
@@ -635,6 +627,27 @@ LFA_conquest_5 = {
 		icon = mission_convert_bengal
 		position = 7
 		required_missions = { lfa_assimilate_sulawesi } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+LFA_nya_row_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = LFA
+		has_country_flag = formed_nanyang
+	}
+
+	LFA_nya_test = {
+		icon = mission_subjugate_saurashtra
+		position = 10
+		required_missions = { lfa_federalize_the_state } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

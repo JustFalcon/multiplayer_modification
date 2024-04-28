@@ -25,6 +25,7 @@ country_event = {
 					64 117 196
 				}
 			}
+			swap_non_generic_missions = yes
 		}
 	}
 }
