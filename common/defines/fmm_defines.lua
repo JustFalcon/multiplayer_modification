@@ -17,3 +17,7 @@ NDefines.NCountry.NEW_HEIR_LEGITIMACY_THRESHOLD = 80
 NDefines.NCountry.PS_DEMAND_NON_WARGOAL_PROVINCE = 35
 
 NDefines.NDiplomacy.PEACE_COST_GOLD_MAX = 10
+
+-- Alliance Regardless of Opinion
+
+NDefines.NDiplomacy.MIN_RELATIONS_TO_ALLY = -200
