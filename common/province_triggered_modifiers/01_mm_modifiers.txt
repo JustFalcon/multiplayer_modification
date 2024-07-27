@@ -1,0 +1,23 @@
+frm_koxinga_exile = {
+	potential = {
+		owner = {
+			tag = FRM
+		}
+	}
+	trigger = {
+		owner = {
+			tag = FRM
+			NOT = {
+				total_development = 150
+			}
+			stability = 1
+		}
+	}
+
+
+	naval_forcelimit = 5
+	land_forcelimit = 5
+	global_tax_income = 48
+	development_cost = -0.15
+	local_manpower = 5
+}

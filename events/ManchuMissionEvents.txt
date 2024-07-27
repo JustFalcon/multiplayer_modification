@@ -160,6 +160,12 @@ country_event = {
 				cede_province = FRM
 				change_culture = chimin
 			}
+			738 = {
+				add_base_tax = 1
+				add_base_production = 4 
+				add_base_manpower = 5
+				add_province_triggered_modifier = frm_koxinga_exile
+			}
 			FRM = {
 				define_ruler = {
 					name = "Koxinga"
