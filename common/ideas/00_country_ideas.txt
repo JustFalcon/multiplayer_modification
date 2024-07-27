@@ -17206,39 +17206,38 @@ LFA_ideas = {
 
 FRM_ideas = {
 	start = {
-		global_ship_cost = -0.2
-		sailor_maintenance_modifer = -0.2
+		development_cost = -0.1
+		naval_forcelimit_modifier = 0.25
 	}
 	bonus = {
-		allowed_marine_fraction = 0.5
+		colonists = 1
 	}
 	trigger = {
 		tag = FRM
 	}
 	free = yes
 	frm_shock_troopers = {
-		shock_damage_received = -0.2
+		shock_damage_received = -0.10
 	}
 	frm_trade_networks = {
 		trade_efficiency = 0.15
 	}
 	frm_blockade_tactics = {
-		blockade_impact_on_siege_in_fleet_modifier = 1
+		siege_blockade_progress = 1
 		blockade_efficiency = 0.5
 	}
 	frm_center_of_trade = {
-		merchants = 1
+		global_own_trade_power = 0.15
 	}
-	frm_confucion_teachings = {
-		harmonization_speed = 0.25
-		yearly_harmony = 0.25
+	frm_multiculturalism = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.25
 	}
 	frm_discipline_tactics = {
 		discipline = 0.05
 	}
 	frm_industrialization = {
-		development_cost = -0.1
-		build_cost = -0.15
+		global_trade_goods_size_modifier = 0.1
 	}
 }
 
