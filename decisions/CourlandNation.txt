@@ -32,6 +32,7 @@ country_decisions = {
 			OR = {
 				province_id = 39	 # Kurland
 				province_id = 1935	 # Semigallia
+				province_id = 38 	 # Riga
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -49,13 +50,14 @@ country_decisions = {
 				religion = anglican
 			}
 			owns_core_province = 39	 # Kurland
+			owns_core_province = 38 # Riga
 			owns_core_province = 1935	# Semigallia
 			1935 = { 					# Semigallia
 				is_state = yes
 			}
 		}
 		effect = {
-			38 = { # Semigallia
+			38 = { # Riga
 				move_capital_effect = yes
 			}
 			change_tag = KUR
