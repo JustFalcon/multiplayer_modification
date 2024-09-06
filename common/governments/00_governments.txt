@@ -59,6 +59,7 @@ monarchy = {
 				livonian_general_controlled_monarchy
 				livonian_absolute_monarchy
 				livonian_enlightened_monarchy
+				kourland_colonial_monarchy
 				#Again
 				polish_great_sejm
 				polish_elective_monarchy
