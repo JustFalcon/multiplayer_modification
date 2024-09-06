@@ -977,12 +977,7 @@ country_event = {
 			}
 		}
 		remove_government_reform = colonial_government
-		if = {
-            limit = {
-                NOT = { government = republic }
-            }
-            change_government = republic
-        } 
+		#set_legacy_government = administrative_republic
 		kill_ruler = yes
 	}
 }
