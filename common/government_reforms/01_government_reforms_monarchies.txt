@@ -7468,7 +7468,7 @@ kourland_colonial_monarchy = {
 		}
 	}
 	nation_designer_trigger = {
-		primary_culture = livonian
+		primary_culture = latvian
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40

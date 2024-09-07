@@ -2,6 +2,9 @@
  kourland_colonial_monarchy:0 "Kurland Colonial Monarchy"
  kourland_colonial_monarchy_desc:0 "The Kurland Monarchy is often defined by its unique stance towards overseas affairs. Due to its limited position and poor finances, the Kourlandish approach to colonization is highly unique."
  kourland_colonial_investments_mechanic:0 "Colonial Investment"
+ kurland_investment:0 "Colonial Investment Pool"
+ kurland_investment_gain_modifier:0 " "
+ monthly_kurland_investment:0 " "
  
  
  

@@ -6,16 +6,24 @@ kourland_colonial_investments_mechanic = {
 	}
 
 	powers = {
-		russian_modernization = {
-			gui = russian_modernization_gov_mech
+		kurland_investment = {
+			gui = kurland_colonial_investment_gov_mech
 			max = 100
 			reset_on_new_ruler = no
 			base_monthly_growth = -0.3
-			development_scaled_monthly_growth = 0
-			monarch_power = adm
+			show_before_interactions = yes
+			monarch_power = dip
 			scaled_modifier = {
 				modifier = {
-					embracement_cost = -0.5
+					colony_cost_modifier = -0.1
+					global_colonial_growth = 35
+
+				}
+			}
+			range_modifier = {
+				start_value = 50
+				modifier = { 
+					colony_development_boost = 1
 				}
 			}
 			is_good = yes
@@ -23,15 +31,15 @@ kourland_colonial_investments_mechanic = {
 	}
 	
 	interactions = {
-		promote_hessian_militarization = {
-			gui = hessian_militarization_gov_mech
-			cost_type = russian_modernization
+		invest_in_colonial_investment = {
+			gui = kurland_colonial_investment_gov_mech
+			cost_type = kurland_investment
 			center = no
 			trigger = {
 				NOT = {
 					has_government_power = {
 						mechanic_type = kourland_colonial_investments_mechanic
-						power_type = russian_modernization
+						power_type = kurland_investment
 						value = 100
 					}
 				}
@@ -45,48 +53,48 @@ kourland_colonial_investments_mechanic = {
 					}
 					add_government_power = {
 						mechanic_type = kourland_colonial_investments_mechanic
-						power_type = russian_modernization
+						power_type = kurland_investment
 						value = 10
 					}
 				}
 				else = {
 					add_government_power = {
 						mechanic_type = kourland_colonial_investments_mechanic
-						power_type = russian_modernization
+						power_type = kurland_investment
 						value = 5
 					}
 				}
 			}
-			ai_chance = {
-				factor = 10
-				modifier = {
-					factor = 0
-					is_at_war = no
-				}
-				modifier = {
-					factor = 0
-					NOT = { num_of_mercenaries = 1 }
-				}
-				modifier = {
-					factor = 0
-					is_in_deficit = yes
-					num_of_loans = 3
-				}
-				modifier = {
-					factor = 0
-					NOT = { years_of_income = 0.25 }
-				}
-				modifier = {
-					factor = 0
-					NOT = {
-						has_government_power = {
-							mechanic_type = hessian_militarization_mechanic
-							power_type = hessian_militarization
-							value = 90
-						}
-					}
-				}
-			}
+			# ai_chance = {
+			# 	factor = 10
+			# 	modifier = {
+			# 		factor = 0
+			# 		is_at_war = no
+			# 	}
+			# 	modifier = {
+			# 		factor = 0
+			# 		NOT = { num_of_mercenaries = 1 }
+			# 	}
+			# 	modifier = {
+			# 		factor = 0
+			# 		is_in_deficit = yes
+			# 		num_of_loans = 3
+			# 	}
+			# 	modifier = {
+			# 		factor = 0
+			# 		NOT = { years_of_income = 0.25 }
+			# 	}
+			# 	modifier = {
+			# 		factor = 0
+			# 		NOT = {
+			# 			has_government_power = {
+			# 				mechanic_type = hessian_militarization_mechanic
+			# 				power_type = hessian_militarization
+			# 				value = 90
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 	}
 }
