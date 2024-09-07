@@ -6,8 +6,17 @@
  kurland_investment_gain_modifier:0 "Investment Growth Modifier"
  monthly_kurland_investment:0 "Monthly Investment"
  ability_kourland_colonial_investments_mechanic:0 "Colonial Investment"
- 
- 
+ invest_in_government_colonies:0 "Invest in Colonial Fund"
+ invest_in_government_colonies_desc:0 "To prompt the faster and more sustainable growth of our colonies overseas we must invest further funds."
+ expand_overseas_agricultural_investment:0 "Provide Agricultural Grants"
+ expand_overseas_agricultural_investment_desc:0 "The growth of sugarcane, tobacco, and other cash crops is of extreme interest to our people, by providing enterprising merchants the means to grow these crops cheaply, we can rapidly increase their production."
+ recruit_colonial_officers:0 "Recruit Promising Colonial Officer"
+ recruit_colonial_officers_desc:0 "With the colonies so far afield from our seat of government they have begun establishing their own local militas, by recruiting from their pool of experienced officers we can guarantee qualifications"
+ kur_recruit_colonial_officer_tt:0 "Will provide a choice between recruiting a §G100§! Tradition §YConquistador§! or §YExplorer§!."
+ kur_mod.1.t:0 "Recruit Promising Colonial Officer"
+ kur_mod.1.d:0 "With the colonies so far afield from our seat of government they have begun establishing their own local militas, by recruiting from their pool of experienced officers we can guarantee qualifications"
+ kur_mod.1.a:0 "Recruit a §YConquistador§!"
+ kur_mod.1.b:0 "Recruit an §YExplorer§!"
  
  
  

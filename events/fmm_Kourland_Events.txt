@@ -1,0 +1,38 @@
+
+namespace = kur_mod
+
+country_event = {
+	id = kur_mod.1
+	title = "kur_mod.1.t"
+	desc = kur_mod.1.d
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "kur_mod.1.a"
+		create_conquistador = {
+			tradition = 100
+			add_fire = 1
+			add_manuever = 1
+			add_shock = 1
+			add_siege = 1
+		}
+
+
+	}
+	option = {
+		name = "kur_mod.1.b"
+		create_explorer = {
+			tradition = 100
+			add_fire = 1
+			add_manuever = 1
+			add_shock = 1
+			add_siege = 1
+		}
+
+	}
+}

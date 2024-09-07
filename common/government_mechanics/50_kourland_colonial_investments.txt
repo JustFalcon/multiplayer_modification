@@ -28,4 +28,80 @@ kourland_colonial_investments_mechanic = {
 			is_good = yes
 		}
 	}
+	interactions = {
+		invest_in_government_colonies = {
+			gui = kurland_colonial_investment_gov_mech_interaction
+			cost_type = kurland_investment
+			center = no
+			trigger = {
+				years_of_income = 0.25
+				not = {
+					has_government_power = {
+						mechanic_type = kourland_colonial_investments_mechanic
+						power_type = kurland_investment
+						value = 100
+					}
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = kourland_colonial_investments_mechanic
+					power_type = kurland_investment
+					value = 10
+				}
+				add_years_of_income = -0.25
+			}
+			cooldown_years = 0
+		}
+		expand_overseas_agricultural_investment = {
+			gui = kurland_colonial_investment_gov_mech_interaction
+			cost_type = kurland_investment
+			center = no
+			trigger = {
+				has_government_power = {
+					mechanic_type = kourland_colonial_investments_mechanic
+					power_type = kurland_investment
+					value = 35
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = kourland_colonial_investments_mechanic
+					power_type = kurland_investment
+					value = -35
+				}
+				# Write Effect that grands 5 random provinces in colonial regions owned by you or your colonial subjects a +0.5 goods produced modifer on all agricultural goods for 25 years if they dont already have the modifer
+			}
+			cooldown_years = 15
+		}
+		recruit_colonial_officers = {
+			gui = kurland_colonial_investment_gov_mech_interaction
+			cost_type = kurland_investment
+			center = no
+			trigger = {
+				has_government_power = {
+					mechanic_type = kourland_colonial_investments_mechanic
+					power_type = kurland_investment
+					value = 50
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = kourland_colonial_investments_mechanic
+					power_type = kurland_investment
+					value = -50
+				}
+				ROOT = {
+					country_event = {
+						id = kur_mod.1
+						tooltip = kur_recruit_colonial_officer_tt
+					}
+				}
+				# Event that allows you to pick between a 100 tradition conquistador or explorer
+				# Also grants you a 75% off diplomatic advisor, with a random chance to be a tariffs, colonial range, or trade efficiency advisor
+			}
+			cooldown_years = 15
+		}
+	}
+
 }
