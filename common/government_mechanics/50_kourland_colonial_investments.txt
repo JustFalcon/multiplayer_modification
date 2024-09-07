@@ -14,7 +14,7 @@ kourland_colonial_investments_mechanic = {
 			show_before_interactions = yes
 			scaled_modifier = {
 				modifier = {
-					colony_cost_modifier = -0.1
+					colony_cost_modifier = -1
 					global_colonial_growth = 35
 
 				}
