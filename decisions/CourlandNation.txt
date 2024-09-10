@@ -162,9 +162,10 @@ country_decisions = {
 			on_change_tag_effect = yes
 			if = {
 				limit = {
-					NOT = { accepted_culture = latvian }
+					NOT = { primary_culture = latvian }
 				}
-				add_accepted_culture = latvian
+				change_primary_culture = latvian
+				add_accepted_culture = baltic_german
 			}
 			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
