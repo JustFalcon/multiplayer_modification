@@ -621,6 +621,7 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
+		turkoman_ottoman_institutions
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
