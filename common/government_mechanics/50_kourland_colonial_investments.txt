@@ -31,6 +31,7 @@ kourland_colonial_investments_mechanic = {
 	interactions = {
 		invest_in_government_colonies = {
 			gui = kurland_colonial_investment_gov_mech_interaction
+			icon = GFX_naval_professionalism_button_1
 			cost_type = kurland_investment
 			center = no
 			trigger = {
@@ -55,6 +56,7 @@ kourland_colonial_investments_mechanic = {
 		}
 		expand_overseas_agricultural_investment = {
 			gui = kurland_colonial_investment_gov_mech_interaction
+			icon = GFX_naval_professionalism_button_2
 			cost_type = kurland_investment
 			center = no
 			trigger = {
@@ -76,6 +78,7 @@ kourland_colonial_investments_mechanic = {
 		}
 		recruit_colonial_officers = {
 			gui = kurland_colonial_investment_gov_mech_interaction
+			icon = GFX_naval_professionalism_button_3
 			cost_type = kurland_investment
 			center = no
 			trigger = {
