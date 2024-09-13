@@ -58,3 +58,9 @@ kur_agricultural_investment_prov_modifier = {
 	local_development_cost = -0.15
 	local_build_time = -0.25
 }
+
+gwc_1_prov_mod = {
+	garrison_growth = 0.66
+	local_defensiveness = 0.5
+	# fort_level = 1
+}

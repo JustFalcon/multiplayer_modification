@@ -60,6 +60,10 @@
  por_india_conquest:0 "Conquest of India"
  por_india_conquest:0 "They hold land we desire."
  por_india_conquest_cb:0 "Unlocks §YConquest of India§! Casus Belli on all neighboring provinces & claims in India."
+ gwc_1_prov_mod:0 "Great Wall Expansion - Tier One"
+ desc_gwc_1_prov_mod:0 ""
+ gwc_tt:0 "Will expand the effect of the §YGreat Wall§! to the §YHistoric§! Borders"
+ gwc_province_group:0 "Great Wall of China Provinces"
  
  
  
