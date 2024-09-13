@@ -36,3 +36,70 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = kur_mod.2
+	title = "kur_mod.2.t"
+	desc = kur_mod.2.d
+	picture = NEW_HEIR_eventPicture
+
+	trigger = {
+		AND = {
+			tag = KUR
+			is_year = 1700
+			government = monarchy
+		}
+	}
+	mean_time_to_happen = {
+		months = 96
+	}
+	fire_only_once = yes
+	option = {
+		name = "kur_mod.2.a"
+		# Make them King
+		define_ruler = {
+			name = "Jacob"
+			dynasty = "Kettler"
+			adm = 4
+			dip = 6
+			mil = 3
+			age = 20
+			claim = 100
+			culture = baltic_german
+		}
+	}
+	option = {
+		name = "kur_mod.2.b"
+		# Make them Heir
+		define_heir = {
+			name = "Jacob"
+			dynasty = "Kettler"
+			adm = 4
+			dip = 6
+			mil = 3
+			age = 20
+			claim = 100
+			culture = baltic_german
+		}
+	}
+	option = {
+		name = "kur_mod.2.c"
+		# Make them an Advisor
+		define_advisor = {
+			type = navigator
+			name = "Jacob Kettler"
+			skill = 3
+			culture = baltic_german
+			cost_multiplier = 0.25
+			min_age = 20
+			max_age = 35
+		}
+	}
+	option = {
+		name = "kur_mod.2.d"
+		#Ignore them
+		add_prestige = 10
+		add_dip_power = 100
+
+	}
+}

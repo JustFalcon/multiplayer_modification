@@ -65,6 +65,27 @@ kourland_colonial_investments_mechanic = {
 					power_type = kurland_investment
 					value = 35
 				}
+				
+				hidden_trigger = {
+					any_province = {
+						OR = {
+							AND = {
+								owner_is_colonial_nation = yes
+								owned_by_subject_of = ROOT
+							}
+							owned_by = ROOT
+						}
+						has_plantation_trade_goods = yes
+						NOT = {
+							has_province_modifier = kur_agricultural_investment_prov_modifier
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = kor_oversea_agriculture_trig_tt
+				}
+				
+				
 			}
 			effect = { 
 				add_government_power = {
@@ -72,9 +93,108 @@ kourland_colonial_investments_mechanic = {
 					power_type = kurland_investment
 					value = -35
 				}
+				hidden_effect = {
+					random_province = {
+						limit = {
+							OR = {
+								AND = {
+									owner_is_colonial_nation = yes
+									owned_by_subject_of = ROOT
+								}
+								owned_by = ROOT
+							}
+							has_plantation_trade_goods = yes
+							NOT = {
+								has_province_modifier = kur_agricultural_investment_prov_modifier
+							}
+						}
+						add_province_modifier = {
+							name = kur_agricultural_investment_prov_modifier
+							duration = 5475
+						}
+					}
+					random_province = {
+						limit = {
+							OR = {
+								AND = {
+									owner_is_colonial_nation = yes
+									owned_by_subject_of = ROOT
+								}
+								owned_by = ROOT
+							}
+							has_plantation_trade_goods = yes
+							NOT = {
+								has_province_modifier = kur_agricultural_investment_prov_modifier
+							}
+						}
+						add_province_modifier = {
+							name = kur_agricultural_investment_prov_modifier
+							duration = 5475
+						}
+					}
+					random_province = {
+						limit = {
+							OR = {
+								AND = {
+									owner_is_colonial_nation = yes
+									owned_by_subject_of = ROOT
+								}
+								owned_by = ROOT
+							}
+							has_plantation_trade_goods = yes
+							NOT = {
+								has_province_modifier = kur_agricultural_investment_prov_modifier
+							}
+						}
+						add_province_modifier = {
+							name = kur_agricultural_investment_prov_modifier
+							duration = 5475
+						}
+					}
+					random_province = {
+						limit = {
+							OR = {
+								AND = {
+									owner_is_colonial_nation = yes
+									owned_by_subject_of = ROOT
+								}
+								owned_by = ROOT
+							}
+							has_plantation_trade_goods = yes
+							NOT = {
+								has_province_modifier = kur_agricultural_investment_prov_modifier
+							}
+						}
+						add_province_modifier = {
+							name = kur_agricultural_investment_prov_modifier
+							duration = 5475
+						}
+					}
+					random_province = {
+						limit = {
+							OR = {
+								AND = {
+									owner_is_colonial_nation = yes
+									owned_by_subject_of = ROOT
+								}
+								owned_by = ROOT
+							}
+							has_plantation_trade_goods = yes
+							NOT = {
+								has_province_modifier = kur_agricultural_investment_prov_modifier
+							}
+						}
+						add_province_modifier = {
+							name = kur_agricultural_investment_prov_modifier
+							duration = 5475
+						}
+					}
+				}
+				custom_tooltip = kur_agricultural_investment_tt
+				
 				# Write Effect that grands 5 random provinces in colonial regions owned by you or your colonial subjects a +0.5 goods produced modifer on all agricultural goods for 25 years if they dont already have the modifer
 			}
-			cooldown_years = 15
+			cooldown_years = 10
 		}
 		recruit_colonial_officers = {
 			gui = kurland_colonial_investment_gov_mech_interaction

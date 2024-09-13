@@ -52,3 +52,9 @@ chinese_way_of_democracy = {
 	diplomatic_reputation = 2
 	# yearly government power of some sort?
 }
+
+kur_agricultural_investment_prov_modifier = {
+	trade_goods_size = 2
+	local_development_cost = -0.15
+	local_build_time = -0.25
+}

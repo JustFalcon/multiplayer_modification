@@ -17,6 +17,16 @@
  kur_mod.1.d:0 "With the colonies so far afield from our seat of government they have begun establishing their own local militas, by recruiting from their pool of experienced officers we can guarantee qualifications"
  kur_mod.1.a:0 "Recruit a §YConquistador§!"
  kur_mod.1.b:0 "Recruit an §YExplorer§!"
+ kur_agricultural_investment_prov_modifier:0 "Expanded Agricultural Settlements"
+ desc_kur_agricultural_investment_prov_modifier:0 " "
+ kur_agricultural_investment_tt:0 "§YFive§! random provinces in the new world owned by you or your subjects that produce either §YCocoa§!, §YCoffee§!, §YCotton§!, §YSugar§!, §YTea§!, or §YTobacco§! shall gain the modifier '§YExpanded Agricultural Settlements§!' which grants the following:\nGoods Produced: §G+2§!\nLocal Development Cost: §G-15%§!\nLocal Construction Time: §G-25%§!"
+ kor_oversea_agriculture_trig_tt:0 "Any province in the new world owned by you our your colonial subjects has one of the following: §YCocoa§!, §YCoffee§!, §YCotton§!, §YSugar§!, §YTea§!, or §YTobacco§!"
+ kur_mod.2.t:0 "The House of Ketteler"
+ kur_mod.2.d:0 "Jacob Kettler was Duke of Courland and Semigallia from 1642 to 1682. Under his rule, Courland and Semigallia became more independent of its Polish suzerain, reached its peak in wealth, and even engaged in its own overseas colonization, making it one of the smallest, but fastest growing states in the world at that time.\n\nYet, in the end the results of his rule failed in the confrontation with much stronger powers both directly in the Baltic and overseas. A ruler "too rich and powerful to be a duke but too small and poor to be a king" could not, with his small ancestral territory and very limited resources, play the powerful role he sought in European politics of that time."
+ kur_mod.2.a:0 "Proclaim Jacob Kettler as the new [KUR.Monarch.GetTitle]."
+ kur_mod.2.b:0 "Jacob Kettler shall serve as the next [KUR.Monarch.GetTitle]."
+ kur_mod.2.c:0 "Jacob Kettler shall be an advisor, nothing more."
+ kur_mod.2.d:0 "We have no place for German Aristocrats."
  
  
  
