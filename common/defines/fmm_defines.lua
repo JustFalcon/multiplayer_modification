@@ -16,7 +16,7 @@ NDefines.NCountry.NEW_HEIR_LEGITIMACY_THRESHOLD = 80
 -- Experimental Province Cost
 NDefines.NCountry.PS_DEMAND_NON_WARGOAL_PROVINCE = 35
 
-NDefines.NDiplomacy.PEACE_COST_GOLD_MAX = 10
+-- NDefines.NDiplomacy.PEACE_COST_GOLD_MAX = 10
 
 -- Alliance Regardless of Opinion
 
