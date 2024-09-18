@@ -25,8 +25,11 @@
  lfa_empire_voluntolds_desc:0 "Volunteers from the Empire of China that have been sent to aid in the expansion of the Lanfang Republic."
  unlock_lfa_empire_voluntolds_tt:0 "Unlocks the §YHeavenly Volunteers§! Mercenary Company. \nThis Company will be removed upon completion of the mission §YThe Federal Constitution§!."
  lfa_ties_with_china_tooltip:0 "§YLanfang§! is a tributary state of §YThe Empire of China§!"
- lfa_ties_with_china_total_tooltip:0 "One of the following must be true:\n   §YLanfang§! is a tributary state of §YThe Empire of China§!\n   §YLanfang§! is allied with §YThe Empire of China§!."
+ lfa_ties_with_china_total_tooltip:0 "One of the following must be true:\n   §YLanfang§! is a tributary state of §YThe Empire of China§!\n   §YLanfang§! is allied with §YThe Empire of China§!\n   §YLanfang§! has insulted §YThe Empire of China§!"
  lanfang.establish_harbor:0 "Growth of the Port of Pontianak"
  lanfang.establish_harbor_desc:0 "With the growth of the mineral trade in the Lanfang Kongsis, the need for a dedicated sea harbor has grown obvious. With investments from the Chinese it has become possible to convert the seldom used port of Pontianak into a true trade harbor. With this new port, the export of minerals shall become easier than ever before!"
  lanfang.establish_harbor_opt1:0 "Forward to the Sea!"
+ ties_with_china_effect_tt:0 "If this mission is completed by insulting the §YEmperor of China§! then §YLanfang§! shall gain §G10,000§! Manpower and §G200.00§! Ducats. Otherwise, §YLanfang§! shall gain access to a powerful and cheap mercenary company.\n"
+ lfa_indonesian_conquest_ae:0 "Aggressive Diplomacy"
+ desc_lfa_indonesian_conquest_ae:0 "Aggressive Diplomacy across all of Indonesia shall ensure the movement to counter our expansion is crushed early."
  
