@@ -58,3 +58,66 @@ country_event = {
 
 }
 
+country_event = {
+	id = lfa_emp_gold_exchange.1
+	title = "lfa.gold_exchange_t"
+	desc = "lfa.gold_exchange_d"
+	picture = FALUN_COPPER_MINE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "lfa.gold_exchange_o1"
+		add_treasury = 500
+		add_country_modifier = {
+			name = lfa_gold_exhange_mod_ally
+			duration = -1
+		}
+		capital_scope = {
+			add_province_triggered_modifier = lfa_gold_exhange_mod_ally
+		}
+		ROOT = {
+			save_global_event_target_as = lfa_gold_exchange_target
+		}
+		LFA = {
+			country_event = {
+				id = lfa_emp_gold_exchange.2
+				days = 5
+				random = 2
+			}
+		}
+		# LFA = {
+		# 	country_event = {
+		# 		id = lfa_emp_gold_exchange.2
+		# 		days = 5
+		# 		random = 2
+		# 	}
+		# }
+	}
+	option = {
+		name = "lfa.gold_exchange_o2"
+		reverse_add_opinion = {
+			who = LFA
+			modifier = scornfully_insulted
+		}
+		add_prestige = 15
+	}
+}
+country_event = {
+	id = "lfa_emp_gold_exchange.2"
+	title = "lfa_emp_gold_exchange2_t"
+	desc = "lfa_emp_gold_exchange2_d"
+	picture = FALUN_COPPER_MINE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "lfa_emp_gold_exchange2_o1"
+		add_inflation = -2
+		add_country_modifier = {
+			name = lfa_gold_exchange_successful
+			duration = -1
+		}
+	}
+}
+

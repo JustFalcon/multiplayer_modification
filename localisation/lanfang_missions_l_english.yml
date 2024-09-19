@@ -3,10 +3,10 @@
  lfa_expand_mining_operations_desc:0 "The Lanfang Mining Groups have struck gold, it would be wise to ensure this mine is used to its maximum capacity and that all profits go the proper source, the government."
 
  lfa_development_capital_title:0 "Expand Capital Administration"
- lfa_development_capital_desc:0 ""
+ lfa_development_capital_desc:0 "In order to properly adminster our new state, it would be prudent to establish a proper capital in Pontianak."
 
  lfa_promote_urbanization_title:0 "Promote Urbanization"
- lfa_promote_urbanization_desc:0 ""
+ lfa_promote_urbanization_desc:0 "Indonesia is largely made up of small cities and vast farmlands, using the Chinese Model we shall promote urbanization across Indonesia to allow us greater economic control."
 
  lfa_breakneck_industrialization_title:0 "Beating Heart of Industry"
  lfa_breakneck_industrialization_desc:0 ""
@@ -18,13 +18,13 @@
  lfa_the_cloves_desc:0 ""
 
  lfa_strong_alliances_title:0 "Secure Strong Allies"
- lfa_strong_alliances_desc:0 ""
+ lfa_strong_alliances_desc:0 "To prepare for our conquest of Indonesia we must either secure strong allies, or expand quickly enough that such allies are unneeded."
 
- lfa_expansive_trade_allies_title:0 "Secure Trade League"
- lfa_expansive_trade_allies_desc:0 ""
+ lfa_flow_of_trade_title:0 "Control the Flow of Trade"
+ lfa_flow_of_trade_desc:0 ""
 
- LFA_economic_subjects_title:0 "Economic Dependents"
- LFA_economic_subjects_desc:0 ""
+ LFA_the_golden_fleet_title:0 "The Golden Fleet"
+ LFA_the_golden_fleet_desc:0 ""
 
  lfa_ties_with_china_title:0 "Ties With the Emperor"
  lfa_ties_with_china_desc:0 ""

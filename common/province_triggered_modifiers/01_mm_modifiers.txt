@@ -21,3 +21,32 @@ frm_koxinga_exile = {
 	development_cost = -0.15
 	local_manpower = 5
 }
+lfa_gold_exhange_mod_ally = {
+	potential = {
+		owner = {
+			OR = {
+				is_great_power = yes
+				is_emperor_of_china = yes
+				total_development = 500
+			}
+		}
+	}
+	trigger = {
+		LFA = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gold_ally_lfa_ally_tt
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = tributary_state
+					}
+				}
+				
+				alliance_with = ROOT
+			}
+		}
+	}
+	expand_infrastructure_cost_modifier = -0.1
+	governing_capacity_modifier = 0.05
+	inflation_reduction = -0.1
+}

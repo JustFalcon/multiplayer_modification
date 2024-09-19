@@ -50,7 +50,10 @@ LFA_development_1 = {
 					name = "capital_of_the_kongsis"
 					duration = -1
 				}
+				change_province_name = "Mandor"
+				rename_capital = "Mandor"
 			}
+
 			change_government_reform_progress = 100
 			add_stability = 1
 		}
@@ -122,39 +125,68 @@ LFA_allies_1 = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  
-			
+		trigger = {
 			OR = {
 				num_of_allies = 2
 				power_projection = 50
 			}
-		} 
+		}
 
-		effect = {  
+		effect = {
 			add_country_modifier = {
-				name = lfa_indonesian_conquest_ae
+				name = "lfa_indonesian_conquest_ae"
 				duration = 1825
 			}
 			add_adm_power = 100
-		} 
+		}
 	}
 
-	lfa_expansive_trade_allies = {
-		icon = mission_alliances
+	lfa_flow_of_trade = {
+		icon = mission_mal_riches_of_trade
 		position = 2
 		required_missions = { lfa_strong_alliances } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 70
+				}
+			}
+			1365 = {
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+			1357 = {
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_years_of_trade_income = {
+				years = 4
+				custom_tooltip = zan_settle_trade_posts_ct
+			}
+			add_estate_loyalty_modifier = {
+				estate = estate_burghers
+				desc = lfa_dominate_indo_trade_b_m
+				loyalty = 20
+				duration = 9125
+			}
+		} 
 	}
 
-	LFA_economic_subjects = {
+	LFA_the_golden_fleet = {
 		icon = mission_african_gold
 		position = 3
 		required_missions = {
-			lfa_expansive_trade_allies
+			lfa_flow_of_trade
 			lfa_gold_trade
 		}
 		provinces_to_highlight = {  } 
@@ -187,7 +219,7 @@ LFA_allies_2 = {
 							overlord_of = LFA
 							LFA = { is_subject_of_type = tributary_state } 
 						}
-						has_been_insulted_by_root = yes 
+						has_been_insulted_by_root = yes
 					}
 				}
 			}
@@ -214,7 +246,7 @@ LFA_allies_2 = {
 			else = {
 				add_manpower = 10
 				add_treasury = 200
-			}			
+			}
 		}
 	}
 
@@ -227,9 +259,115 @@ LFA_allies_2 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {  
+			OR = {
+				any_ally = {
+					OR = {
+						is_great_power = yes
+						is_emperor_of_china = yes
+						development_in_provinces = {
+							value = 500
+						}
+					}
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					trust = {
+						who = ROOT
+						value = 70
+					}
+				}
+				AND = {
+					LFA = {
+						is_subject_of_type = tributary_state
+						overlord = {
+							is_emperor_of_china = yes
+							has_opinion = {
+								who = LFA
+								value = 150
+							}
+						}
+					}
+				}
 
-		effect = {  } 
+			}
+			gold_income = 15
+		} 
+
+		effect = {
+			if = {
+				limit = {
+					any_ally = {
+						OR = {
+							is_great_power = yes
+							is_emperor_of_china = yes
+							development_in_provinces = {
+								value = 500
+							}
+						}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						trust = {
+							who = ROOT
+							value = 70
+						}
+					}
+					NOT = {
+						is_subject_of_type = tributary_state
+					}
+				}
+				random_ally = {
+					limit = {
+						OR = {
+							is_great_power = yes
+							is_emperor_of_china = yes
+							development_in_provinces = {
+								value = 500
+							}
+						}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						trust = {
+							who = ROOT
+							value = 70
+						}
+					}
+					country_event = {
+						id = lfa_emp_gold_exchange.1
+						days = 5
+						random = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					LFA = {
+						is_subject_of_type = tributary_state
+						overlord = {
+							is_emperor_of_china = yes
+							has_opinion = {
+								who = LFA
+								value = 150
+							}
+						}
+					}
+				}
+				LFA = {
+					overlord = {
+						country_event = {
+							id = lfa_emp_gold_exchange.1
+							days = 5
+							random = 2
+						}
+					}
+				}
+			}
+		} 
 	}
 }
 LFA_military_branch_1 = {
@@ -586,13 +724,11 @@ LFA_conquest_3 = {
 				name = "chinese_way_of_democracy"
 				duration = -1
 			}
-			country_event = { id = lanfang.1 }
+			country_event = { id = lanfang.1 } 
 			if = {
-				limit = {
-					has_country_flag = unlocked_voluntalds
-				}
+				limit = { has_country_flag = unlocked_voluntalds } 
 				hidden_effect = { clr_country_flag = unlocked_voluntalds } 
-			} 
+			}
 		}
 	}
 }
