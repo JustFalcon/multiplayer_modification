@@ -45,4 +45,9 @@
  lfa_emp_gold_exchange2_t:0 "[lfa_gold_exchange_target.GetName] Accepts"
  lfa_emp_gold_exchange2_d:0 "Our Great Friends in [lfa_gold_exchange_target.GetName] have accepted our generous offer and have initiated our Gold Exchange Program."
  lfa_emp_gold_exchange2_o1:0 "Outstanding!"
+ lfa_crocs_got_rocked:0 "The Crocodile Solution"
+ desc_lfa_crocs_got_rocked:0 "Who said Crocodiles can't be the solution?"
+ lanfang.3.title:0 "The Expelling of Crocodiles"
+ lanfang.3.desc:0 "Soon after the establishment of the Lanfang Republic, a crocodile crisis broke out in the country. Groups of crocodiles were moving in Lanfang's domestic waters, with rampant activities, and from time to time, they boarded the shore to devour people and animals, which made the people extremely alarmed and disturbed, and seriously jeopardised the safety of the people's lives and properties. Upon receiving the news, Luo Fangbo immediately travelled to the affected area in person and commanded the people to expel the crocodiles successfully. At that time, Luo Fangbo designed to secretly bring people to poison and ambush bows and arrows on the crocodile gathering point on the one hand, and on the other hand, he also followed the method of Han Yu's crocodile sacrifice in Chaozhou, set up the sacrificial table, read the sacrificial text, and ordered the crocodile to 'leave the country immediately.' It is said that the local 'crocodile problem' was eliminated before long. The local natives and overseas Chinese admired Luo Fangbo's crocodile cure and regarded him as an extraordinary person with magical ability."
+ lanfang.3.a:0 "How Extraordinary!"
  

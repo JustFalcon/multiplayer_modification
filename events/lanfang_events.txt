@@ -121,3 +121,45 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = "lanfang.3"
+	title = "lanfang.3.title"
+	desc = "lanfang.3.desc"
+	picture = MALAYAN_PORT_eventPicture
+
+	trigger = {
+		tag = LFA
+		OR = {
+			AND = {
+				mil = 6
+				adm = 3
+				dip = 3
+			}
+			AND = {
+				mil = 3
+				adm = 6
+				dip = 3
+			}
+			AND = {
+				mil = 3
+				adm = 3
+				dip = 6
+			}
+		}
+	}
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = "lanfang.3.a"
+		add_prestige_or_monarch_power = { amount = 20 }
+		add_country_modifier = {
+			name = lfa_crocs_got_rocked
+			duration = 3650
+		}
+	}
+}
+

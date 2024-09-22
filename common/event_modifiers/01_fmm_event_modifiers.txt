@@ -73,3 +73,7 @@ lfa_gold_exchange_successful = {
 	interest = -1
 	inflation_action_cost = -0.25
 }
+lfa_crocs_got_rocked = {
+	global_unrest = -2
+	stability_cost_modifier = -0.1
+}
