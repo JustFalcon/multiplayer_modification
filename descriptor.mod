@@ -8,4 +8,4 @@ tags={
 	"Alternative History"
 }
 name="Falcon's Multiplayer Modifications"
-supported_version="v1.37.2.0"
+supported_version="v1.37.5.0"
